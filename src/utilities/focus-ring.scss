@@ -1,0 +1,13 @@
+:focus:not([tabindex="-1"]) {
+  /* Custom focus indicator */
+  box-shadow: 0 0 0 0.2rem hsla(219, 100%, 50%, 0.5);
+
+  /* Fallback for Windows High Contrast mode */
+  outline: transparent solid 0.2rem;
+}
+
+::-moz-focus-inner {
+  /* Remove inner focus ring and padding in Firefox */
+  border: 0;
+  padding: 0;
+}

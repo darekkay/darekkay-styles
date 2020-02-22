@@ -1,0 +1,62 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+  width: 100%;
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 0 2.5rem;
+}
+
+header,
+footer {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2.5rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  padding: 0;
+  border: none;
+  cursor: default;
+  font-size: 3.2rem;
+  line-height: 1.5;
+}
+
+footer {
+  flex-direction: column;
+  font-size: 1.6rem;
+}
+
+footer > * {
+  margin: 0.6rem;
+}
+
+.inverted {
+  background: #202020;
+  color: #fff;
+}
+
+.inverted a,
+.inverted a:hover,
+.inverted a:visited {
+  color: #ff9e07;
+}
+
+.github-icon {
+  height: 2rem;
+  width: 2rem;
+  margin-left: 0.5rem;
+}

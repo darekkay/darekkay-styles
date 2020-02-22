@@ -1,0 +1,18 @@
+code {
+  padding: 0.2rem 0.4rem;
+  white-space: pre;
+  word-break: break-word;
+  background-color: $background-light-color;
+  color: #c7254e;
+}
+
+pre.shell:before {
+  // "$ "
+  content: "\000024\00a0";
+}
+
+pre code {
+  padding: 0;
+  color: inherit;
+  background-color: inherit;
+}

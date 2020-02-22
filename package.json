@@ -1,0 +1,38 @@
+{
+  "name": "@darekkay/styles",
+  "description": "My shared CSS styles",
+  "version": "1.0.0",
+  "author": "Darek Kay <hello@darekkay.com> (https://darekkay.com/)",
+  "bugs": {
+    "url": "https://github.com/darekkay/darekkay-styles/issues",
+    "email": "hello@darekkay.com"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "4.13.1",
+    "npm-run-all": "4.1.5",
+    "prettier": "1.19.1"
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "homepage": "https://github.com/darekkay/darekkay-styles",
+  "keywords": [
+    "css",
+    "darekkay",
+    "styles"
+  ],
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darekkay/darekkay-styles.git"
+  },
+  "scripts": {
+    "build": "run-p build:**",
+    "build:default": "node-sass src/_all.scss dist/styles.css --output-style compressed",
+    "build:template": "node-sass src/_template.scss dist/styles-template.css --output-style compressed",
+    "format": "prettier --write -- \"src/**/*.scss\""
+  }
+}

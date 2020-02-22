@@ -1,0 +1,65 @@
+html {
+  /* font-size 1em = 10px on default browser settings */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $base-font-color;
+}
+
+code,
+pre,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+  font-size: 1.7rem;
+}
+
+pre {
+  overflow: auto;
+  padding: 1.5rem;
+  background-color: $background-light-color;
+  border-radius: 3px;
+}
+
+a,
+a:hover,
+a:visited {
+  color: #005aff;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+blockquote {
+  margin: 2rem 0;
+  padding: 2rem 3rem;
+  border-left: 0.4rem solid #3a7fff;
+  background-color: $background-light-color;
+}
+
+td,
+th {
+  padding: 1rem 2rem 1rem 1rem;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $background-light-color;
+}
