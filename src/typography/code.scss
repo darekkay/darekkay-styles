@@ -1,9 +1,11 @@
+@import "../base/variables";
+
 code {
   padding: 0.2rem 0.4rem;
   white-space: pre;
   word-break: break-word;
   background-color: $background-light-color;
-  color: #c7254e;
+  color: $code-color;
 }
 
 pre.shell:before {

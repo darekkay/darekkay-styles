@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 html,
 body {
   height: 100%;
@@ -11,8 +13,8 @@ body {
 main {
   flex: 1 0 auto;
   width: 100%;
-  max-width: 800px;
-  margin: 4rem auto;
+  max-width: $content-max-width;
+  margin: 5rem auto;
   padding: 0 2.5rem;
 }
 
@@ -23,10 +25,11 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 2.5rem 1rem;
+  padding: 4rem 1rem;
 }
 
 header h1 {
+  max-width: $content-max-width;
   margin: 0;
   padding: 0;
   border: none;
@@ -44,15 +47,16 @@ footer > * {
   margin: 0.6rem;
 }
 
-.inverted {
-  background: #202020;
-  color: #fff;
-}
+header,
+footer {
+  color: $inverted-font-color;
+  background: $inverted-background-color;
 
-.inverted a,
-.inverted a:hover,
-.inverted a:visited {
-  color: #ff9e07;
+  a,
+  a:hover,
+  a:visited {
+    color: $inverted-link-color;
+  }
 }
 
 .github-icon {

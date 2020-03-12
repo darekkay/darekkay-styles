@@ -1,7 +1,10 @@
+@import "../base/variables";
+
 p,
 dl,
 ol,
 ul,
+hr,
 blockquote,
 pre,
 table,
@@ -49,7 +52,7 @@ h6 {
 h1,
 h2 {
   padding-bottom: 0.3rem;
-  border-bottom: 1px solid #eaecef;
+  border-bottom: 1px solid $border-color;
   margin-bottom: 2rem;
 }
 

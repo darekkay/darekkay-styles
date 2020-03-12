@@ -1,6 +1,17 @@
-$base-font-color: #2b3236 !default;
+@import "colors";
+
+$base-font-color: $blue-80 !default;
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 $base-font-size: 1.8rem;
 
-$background-light-color: #f3f5f7;
+$accent-color: $blue-vivid-50;
+$background-light-color: $gray-cool-3 !default;
+$border-color: $gray-cool-10;
+$code-color: $red-cool-vivid-60;
+
+$inverted-background-color: $blue-warm-70 !default;
+$inverted-font-color: $white !default;
+$inverted-link-color: $gold-vivid-20 !default;
+
+$content-max-width: 800px !default;

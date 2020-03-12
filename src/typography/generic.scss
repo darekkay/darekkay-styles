@@ -1,3 +1,5 @@
+@import "../base/variables";
+
 html {
   /* font-size 1em = 10px on default browser settings */
   font-size: 62.5%;
@@ -31,7 +33,7 @@ pre {
 a,
 a:hover,
 a:visited {
-  color: #005aff;
+  color: $accent-color;
 }
 
 a {
@@ -44,13 +46,13 @@ a:hover {
 
 hr {
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid $border-color;
 }
 
 blockquote {
   margin: 2rem 0;
   padding: 2rem 3rem;
-  border-left: 0.4rem solid #3a7fff;
+  border-left: 0.4rem solid $accent-color;
   background-color: $background-light-color;
 }
 
