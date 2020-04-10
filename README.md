@@ -7,3 +7,7 @@ My shared CSS styles.
 ```
 $ npm publish --access public
 ```
+
+## License
+
+This project and its contents are open source under the [MIT license](LICENSE).
