@@ -9,8 +9,10 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "jest": "26.0.1",
     "node-sass": "4.13.1",
     "npm-run-all": "4.1.5",
+    "onecolor": "3.1.0",
     "prettier": "1.19.1"
   },
   "files": [
@@ -33,6 +35,8 @@
     "build": "run-p build:**",
     "build:default": "node-sass src/_all.scss dist/styles.css --output-style compressed",
     "build:template": "node-sass src/_template.scss dist/styles-template.css --output-style compressed",
-    "format": "prettier --write -- \"src/**/*.scss\""
+    "ci": "npm run test",
+    "format": "prettier --write -- \"src/**/*.scss\"",
+    "test": "jest"
   }
 }
