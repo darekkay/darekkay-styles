@@ -57,6 +57,10 @@ footer {
   a:visited {
     color: $inverted-link-color;
   }
+
+  :focus:not([tabindex="-1"]) {
+    box-shadow: 0 0 0 0.2rem $inverted-focus-ring-color;
+  }
 }
 
 .github-icon {

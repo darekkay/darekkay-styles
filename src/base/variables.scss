@@ -5,6 +5,8 @@ $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Noto Sans", "Helvetica Neue", Arial, sans-serif;
 $base-font-size: 1.8rem;
 
+$focus-ring-color: hsla(219, 100%, 50%, 0.5);
+
 $accent-color: $dk-blue-vivid-55 !default;
 $background-light-color: $gray-cool-3 !default;
 $border-color: $gray-cool-10 !default;
@@ -14,5 +16,6 @@ $code-background-color: $magenta-vivid-5 !default;
 $inverted-background-color: $dk-blue-75 !default;
 $inverted-font-color: $white !default;
 $inverted-link-color: $yellow-vivid-20 !default;
+$inverted-focus-ring-color: hsla(49, 100%, 49%, 0.5);
 
 $content-max-width: 800px !default;
