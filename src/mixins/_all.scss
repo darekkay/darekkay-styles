@@ -7,7 +7,13 @@
 /// @param {Length} $right [null] - Right offset
 /// @param {Length} $bottom [null] - Bottom offset
 /// @param {Length} $left [null] - Left offset
-@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+@mixin position(
+  $position,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null
+) {
   position: $position;
   top: $top;
   right: $right;
