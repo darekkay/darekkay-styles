@@ -56,6 +56,11 @@ table {
   border-spacing: 0;
 }
 
+th {
+  /* Override default center alignment */
+  text-align: left;
+}
+
 hr {
   /* Add the correct box sizing in Firefox */
   box-sizing: content-box;
