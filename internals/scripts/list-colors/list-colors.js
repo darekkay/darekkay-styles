@@ -2,11 +2,9 @@
 
 const { readFileSync, writeFileSync } = require("fs");
 const { join } = require("path");
-const assert = require("assert").strict;
 
 const _ = require("lodash");
 const ejs = require("ejs");
-const onecolor = require("onecolor");
 
 const colorsFile = readFileSync(
   join(__dirname, "..", "..", "..", "src", "base", "colors.scss"),
@@ -19,6 +17,16 @@ let match;
 while ((match = colorLinePattern.exec(colorsFile)) !== null) {
   colors.push([match[1], match[2], match[3], match[4]]);
 }
+
+const flattened = colors.reduce(
+  (accumulator, color) => ({ ...accumulator, [color[0]]: color[3] }),
+  {}
+);
+
+writeFileSync(
+  join(__dirname, "..", "..", "..", "public", "color-palette.json"),
+  JSON.stringify(flattened, null, 2)
+);
 
 const grouped = _.groupBy(
   colors,
