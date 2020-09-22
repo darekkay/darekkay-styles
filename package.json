@@ -39,10 +39,11 @@
     "build": "run-s build:**",
     "build:default": "node-sass src/_all.scss dist/css/styles.css --output-style compressed",
     "build:template": "node-sass src/_template.scss dist/css/styles-template.css --output-style compressed",
-    "build:colors": "node internals/scripts/list-colors/list-colors.js && a11y-contrast public/color-palette.json --min-ratio-3=40 --min-ratio-4.5=50 --min-ratio-7=70",
+    "build:colors": "node internals/scripts/list-colors/list-colors.js",
     "build:docs": "copyfiles -f public/* dist/",
     "ci": "npm run test",
     "format": "prettier --write .",
-    "test": "jest"
+    "lint:colors": "npm run build:colors && a11y-contrast public/color-palette.json --min-ratio-3=40 --min-ratio-4.5=50 --min-ratio-7=70",
+    "test": "jest && npm run lint:colors"
   }
 }

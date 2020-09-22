@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/styles-template.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/>
     <title>Style Guide</title>
   </head>
 
@@ -140,6 +140,25 @@
   "version": "1.0.7"
 }</pre
       >
+
+      <p>But highlight.js <em>is</em> supported out of the box. Here's some CSS code:</p>
+
+      <pre class="hljs"><code><span class="hljs-keyword">@import</span> <span class="hljs-string">"manual.css"</span>;
+
+<span class="hljs-selector-tag">h1</span><span class="hljs-selector-class">.mystyle</span><span class="hljs-selector-attr">[href^=<span class="hljs-string">"http"</span>]</span><span class="hljs-selector-pseudo">:lang(en)</span> {
+  <span class="hljs-attribute">color</span>: blue; <span class="hljs-comment">/* <span class="hljs-doctag">TODO:</span> change THIS to yellow for next version! */</span>
+  <span class="hljs-attribute">border</span>: <span class="hljs-built_in">rgb</span>(<span class="hljs-number">255</span>,<span class="hljs-number">0</span>,<span class="hljs-number">0</span>);
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#FAFAFA</span>;
+  <span class="hljs-attribute">background</span>: <span class="hljs-built_in">url</span>(hello.jpg) <span class="hljs-meta">!important</span>;
+}
+</code></pre>
+
+      <p>And here's some pro JavaScript code:</p>
+
+      <pre class="hljs"><code><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">log</span>(<span class="hljs-params">message</span>) </span>{
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Log:"</span>, message.replace(<span class="hljs-regexp">/^\s*(.*)/</span>, <span class="hljs-string">"moo"</span>));
+}
+</code></pre>
 
       <p>Shell commands should be marked as such:</p>
 
