@@ -20,7 +20,6 @@
 
   .hljs-variable,
   .hljs-template-variable,
-  .hljs-name,
   .hljs-selector-id,
   .hljs-selector-class,
   .hljs-regexp,
@@ -61,6 +60,7 @@
   }
 
   .hljs-keyword,
+  .hljs-name,
   .hljs-selector-tag {
     color: $tomorrow-purple;
   }
