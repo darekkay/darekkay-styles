@@ -55,13 +55,3 @@ blockquote {
   border-left: 0.4rem solid $accent-color;
   background-color: $background-light-color;
 }
-
-td,
-th {
-  padding: 1rem 2rem 1rem 1rem;
-  vertical-align: top;
-}
-
-tbody tr:nth-child(odd) {
-  background-color: $background-light-color;
-}

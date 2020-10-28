@@ -1,0 +1,32 @@
+@import "../base/variables";
+@import "../mixins/all";
+
+td,
+th {
+  padding: 1rem 2rem 1rem 1rem;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: $background-light-color;
+}
+
+@include breakpoint-md-down() {
+  thead {
+    display: none;
+  }
+  table,
+  tr,
+  td,
+  th,
+  tbody,
+  table caption {
+    display: block;
+  }
+  tr {
+    margin-bottom: 1.5rem;
+  }
+  td {
+    padding: 0.5rem 1rem;
+  }
+}

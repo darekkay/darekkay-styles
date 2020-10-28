@@ -1,7 +1,12 @@
 @import "../base/variables";
+@import "../mixins/all";
 
 main {
   max-width: $content-max-width;
   margin: 0 auto;
-  padding: 2rem 2.5rem;
+  padding: 2rem 1.5rem;
+
+  @include breakpoint-md-up() {
+    padding: 2rem 2.5rem;
+  }
 }
