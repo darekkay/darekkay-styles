@@ -1,11 +1,25 @@
 @import "../base/variables";
 
-:focus:not([tabindex="-1"]) {
+@mixin focus-ring() {
   /* Custom focus indicator */
   box-shadow: 0 0 0 0.2rem $focus-ring-color;
 
   /* Fallback for Windows High Contrast mode */
   outline: transparent solid 0.2rem;
+}
+
+:focus {
+  @include focus-ring();
+}
+
+/* Progressive enhancement: https://matthiasott.com/notes/focus-visible-is-here */
+:focus:not(:focus-visible) {
+  box-shadow: none;
+  outline: 0;
+}
+
+:focus-visible {
+  @include focus-ring();
 }
 
 ::-moz-focus-inner {
