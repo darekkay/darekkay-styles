@@ -2,17 +2,22 @@ button,
 input,
 select,
 textarea {
-  /* Change the font styles in all browsers */
+  // Change the font styles in all browsers
   font: inherit;
   color: inherit;
   line-height: inherit;
 
-  /* Remove the margin in Firefox and Safari */
+  // Remove the margin in Firefox and Safari
   margin: 0;
 }
 
 button,
 select {
-  /* Remove the inheritance of text transform in Firefox */
+  // Remove the inheritance of text transform in Firefox
   text-transform: none;
+}
+
+textarea {
+  // Textareas only resize vertically by default
+  resize: vertical;
 }

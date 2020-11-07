@@ -1,8 +1,11 @@
 @import "../base/variables";
 
 html {
-  /* font-size 1em = 10px on default browser settings */
+  // font-size 1em = 10px on default browser settings
   font-size: 62.5%;
+
+  // words break to prevent overflow
+  word-break: break-all;
 }
 
 body {

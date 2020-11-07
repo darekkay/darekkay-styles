@@ -1,13 +1,25 @@
 /*
- * Disable all animations if the user prefers not to see any
+ * Disable all animations/transitions if the user prefers not to see any
  * https://developers.google.com/web/updates/2019/03/prefers-reduced-motion
+ * https://github.com/csstools/sanitize.css/blob/master/reduce-motion.css
  */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
   *::after {
-    animation-duration: 0.001ms !important;
-    transition-duration: 0.001ms !important;
+    // Remove animations when motion is reduced
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
     animation-iteration-count: 1 !important;
+
+    // Remove fixed background attachments when motion is reduced
+    background-attachment: initial !important;
+
+    // Remove timed scrolling behaviors when motion is reduced
+    scroll-behavior: auto !important;
+
+    // Remove transitions when motion is reduced
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
   }
 }

@@ -30,7 +30,7 @@ html {
   box-sizing: border-box;
   background-repeat: no-repeat;
 
-  /* Prevent adjustments of font size after orientation changes in iOS */
+  // Prevent adjustments of font size after orientation changes in iOS
   -webkit-text-size-adjust: 100%;
 }
 
@@ -39,6 +39,27 @@ html {
 ::after {
   box-sizing: inherit;
   background-repeat: inherit;
+}
+
+::before,
+::after {
+  // Pseudo-elements inherit text decoration and vertical alignment
+  text-decoration: inherit;
+  vertical-align: inherit;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  // Single taps are dispatched immediately on clickable elements
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
 }
 
 img {
@@ -51,18 +72,18 @@ iframe {
 }
 
 table {
-  /* Do not include additional border spacing */
+  // Do not include additional border spacing
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 th {
-  /* Override default center alignment */
+  // Override default center alignment
   text-align: left;
 }
 
 hr {
-  /* Add the correct box sizing in Firefox */
+  // Add the correct box sizing in Firefox
   box-sizing: content-box;
   height: 0;
 }
