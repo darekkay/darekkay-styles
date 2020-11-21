@@ -2,7 +2,7 @@
 
 @mixin focus-ring() {
   // Custom focus indicator
-  box-shadow: 0 0 0 0.2rem $focus-ring-color;
+  box-shadow: 0 0 0 0.2rem var(--focus-ring-color);
 
   // Fallback for Windows High Contrast mode
   outline: transparent solid 0.2rem;

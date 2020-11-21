@@ -14,7 +14,7 @@ body {
 main {
   flex: 1 0 auto;
   width: 100%;
-  max-width: $content-max-width;
+  max-width: var(--content-max-width);
   margin: 5rem auto;
   padding: 0 1.5rem;
 
@@ -34,7 +34,7 @@ footer {
 }
 
 header h1 {
-  max-width: $content-max-width;
+  max-width: var(--content-max-width);
   margin: 0;
   padding: 0;
   border: none;
@@ -55,17 +55,15 @@ footer > * {
 
 header,
 footer {
-  color: $inverted-font-color;
-  background: $inverted-background-color;
+  --focus-ring-color: var(--inverted-focus-ring-color);
+
+  color: var(--inverted-font-color);
+  background: var(--inverted-background-color);
 
   a,
   a:hover,
   a:visited {
-    color: $inverted-link-color;
-  }
-
-  :focus:not([tabindex="-1"]) {
-    box-shadow: 0 0 0 0.2rem $inverted-focus-ring-color;
+    color: var(--inverted-link-color);
   }
 }
 

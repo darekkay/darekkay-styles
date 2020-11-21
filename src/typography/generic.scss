@@ -9,12 +9,12 @@ html {
 }
 
 body {
-  font-family: $base-font-family;
-  font-size: $base-font-size;
+  font-family: var(--base-font-family);
+  font-size: var(--base-font-size);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: $base-font-color;
+  color: var(--base-font-color);
 }
 
 code,
@@ -29,14 +29,14 @@ samp {
 pre {
   overflow: auto;
   padding: 1.5rem;
-  background-color: $background-light-color;
+  background-color: var(--background-light-color);
   border-radius: 5px;
 }
 
 a,
 a:hover,
 a:visited {
-  color: $accent-color;
+  color: var(--accent-color);
 }
 
 a {
@@ -49,12 +49,12 @@ a:hover {
 
 hr {
   border: none;
-  border-top: 1px solid $border-color;
+  border-top: 1px solid var(--border-color);
 }
 
 blockquote {
   margin: 2rem 0;
   padding: 2rem 3rem;
-  border-left: 0.4rem solid $accent-color;
-  background-color: $background-light-color;
+  border-left: 0.4rem solid var(--accent-color);
+  background-color: var(--background-light-color);
 }

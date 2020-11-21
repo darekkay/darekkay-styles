@@ -5,8 +5,8 @@ code {
   padding: 0 0.6rem;
   white-space: pre;
   word-break: break-word;
-  background-color: $code-background-color;
-  color: $code-color;
+  background-color: var(--code-background-color);
+  color: var(--code-color);
   border-radius: 5px;
 }
 

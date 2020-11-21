@@ -8,7 +8,7 @@
   padding: 4rem 0;
 
   > * {
-    max-width: $content-max-width;
+    max-width: var(--content-max-width);
     padding: 0 2.5rem;
     margin: 0 auto;
   }
