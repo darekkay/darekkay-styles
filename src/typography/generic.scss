@@ -5,7 +5,7 @@ html {
   font-size: 62.5%;
 
   // words break to prevent overflow
-  word-break: break-all;
+  word-break: break-word;
 }
 
 body {
@@ -30,7 +30,7 @@ pre {
   overflow: auto;
   padding: 1.5rem;
   background-color: $background-light-color;
-  border-radius: 3px;
+  border-radius: 5px;
 }
 
 a,

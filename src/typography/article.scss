@@ -4,15 +4,27 @@ p,
 dl,
 ol,
 ul,
-hr,
 blockquote,
 pre,
 table,
 section {
-  &:not(:last-child) {
-    margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
+  :last-child {
+    margin-bottom: 0;
   }
 }
+
+hr {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+blockquote {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+// Lists
 
 ol,
 ul {
@@ -35,57 +47,50 @@ ul {
   }
 }
 
+li {
+  padding-left: 0.5rem;
+}
+
 li + li {
   margin-top: 0.5rem;
 }
 
+// Headlines
+
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
-  font-weight: 600;
+h4 {
   line-height: 1.25em;
 }
 
-h1,
-h2 {
-  padding-bottom: 0.3rem;
-  border-bottom: 1px solid $border-color;
-  margin-bottom: 2rem;
-}
-
-h3,
-h4 {
-  margin-bottom: 1.8rem;
-}
-
 h1 {
-  font-size: 3.4rem;
+  font-size: 4.2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 4rem;
 }
 
 h2 {
-  font-size: 2.6rem;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+
   &:not(:first-child) {
-    margin-top: 4rem;
+    margin-top: 5.6rem;
   }
 }
 
 h3 {
-  font-size: 2.2rem;
-  margin-top: 3.5rem;
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-top: 4rem;
+  margin-bottom: 1.8rem;
 }
 
 h4 {
   font-size: 2rem;
-  margin-top: 2.5rem;
-}
-
-h5 {
-  font-size: 1.8rem;
-}
-
-h6 {
-  font-size: 1.6rem;
+  font-weight: 600;
+  margin-top: 3.2rem;
+  margin-bottom: 1.8rem;
 }
