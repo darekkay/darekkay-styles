@@ -7,18 +7,20 @@
   <title>Color Palette</title>
   <style>
     main {
-      max-width: 900px;
+      max-width: 1100px;
     }
 
     h2.color-headline {
       border: none;
-      font-size: 1.8rem;
-      margin: 0 0 1rem 0;
+      font-size: 1.6rem;
+      margin: 0.5rem 1rem 0 0;
+      width: 150px;
     }
 
     .color-row {
       display: flex;
       flex-wrap: wrap;
+      margin-bottom: 1.5rem;
     }
 
     .color-entry {
@@ -35,13 +37,9 @@
 
     .color-cell {
       display: inline-block;
-      width: 3.6rem;
+      width: 4.9rem;
       height: 3.6rem;
       border-radius: 0.4rem;
-    }
-
-    hr {
-      margin: 2rem 0;
     }
 
     code {
@@ -68,25 +66,29 @@
     </p>
 
     <ul>
-      <li>Click on the color box or grade to copy the <strong>SCSS variable</strong>.</li>
-      <li>Click on the hex value to copy the <strong>hex color value</strong>.</li>
+      <li>Click on the color box or grade to copy the
+        <strong>SCSS variable</strong>.
+      </li>
+      <li>Click on the hex value to copy the <strong>hex color value</strong>.
+      </li>
     </ul>
 
     <hr/>
 
     <% Object.entries(palette).forEach(([family, colors]) => { %>
-      <h2 class="color-headline"><%- family %></h2>
-      <div class="color-row">
-        <% colors.forEach(([colorName, ___, colorGrade, colorValue]) => { %>
-          <div class="color-entry">
-            <span class="color-cell" style="background-color: <%- colorValue %>" data-color-name="<%- colorName %>"></span>
-            <code data-color-name="<%- colorName %>"><%- colorGrade %></code>
-            <code data-color-value="<%- colorValue %>"><%- colorValue %></code>
+      <div class="flex">
+        <h2 class="color-headline"><%- family %></h2>
+        <div class="color-row">
+          <% colors.forEach(([colorName, ___, colorGrade, colorValue]) => { %>
+            <div class="color-entry">
+              <span class="color-cell" style="background-color: <%- colorValue %>" data-color-name="<%- colorName %>"></span>
+              <code data-color-name="<%- colorName %>"><%- colorGrade %></code>
+              <code data-color-value="<%- colorValue %>"><%- colorValue %></code>
 
-          </div>
-        <% }); %>
+            </div>
+          <% }); %>
+        </div>
       </div>
-      <hr/>
     <% }); %>
 
   </main>
