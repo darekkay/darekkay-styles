@@ -9,6 +9,7 @@
 [type="search"]::-webkit-search-results-decoration {
   // Remove the default clear button, as a custom clear button exists
   -webkit-appearance: none;
+  appearance: none;
 }
 
 ::-webkit-file-upload-button {

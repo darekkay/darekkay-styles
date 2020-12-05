@@ -1,3 +1,5 @@
+// Flexbox
+
 .flex {
   display: flex;
 }
@@ -18,6 +20,8 @@
   justify-content: center;
 }
 
+// Width / Height
+
 .w-full {
   width: 100%;
 }
@@ -26,10 +30,40 @@
   height: 100%;
 }
 
+// Text Alignment
+
 .text-right {
   text-align: right;
 }
 
 .text-center {
   text-align: center;
+}
+
+// Border
+
+.border {
+  border: 1px solid var(--border-color);
+}
+
+.border-0 {
+  border: none;
+}
+
+@each $direction in (top, right, bottom, left) {
+  .border-#{$direction} {
+    border-#{$direction}: 1px solid var(--border-color);
+  }
+}
+
+.rounded {
+  border-radius: 0.4rem;
+}
+
+.rounded-full {
+  border-radius: 50%;
+}
+
+.outline-none {
+  outline: 2px solid transparent;
 }
