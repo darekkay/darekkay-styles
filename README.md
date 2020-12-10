@@ -12,6 +12,11 @@ My shared CSS styles. View documentation at [darekkay.com/style-guide](https://d
 $ npm publish --access public
 ```
 
+## Related projects
+
+- [Tailwind Typography](https://tailwindcss.com/docs/typography-plugin)
+- [Tailwind Forms](https://github.com/tailwindlabs/tailwindcss-forms)
+
 ## License
 
 This project and its contents are open source under the [MIT license](LICENSE).
