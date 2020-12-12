@@ -1,12 +1,8 @@
-const { series, parallel } = require("gulp");
+const { gulp, tasks } = require("@darekkay/gulp");
 
 const config = require("./config");
-
-const clean = require("@darekkay/gulp/tasks/clean")(config);
-const styles = require("@darekkay/gulp/tasks/styles")(config);
-const content = require("@darekkay/gulp/tasks/content")(config);
-
-const env = require("@darekkay/gulp/tasks/env")(config);
+const { series, parallel } = gulp;
+const { clean, styles, content, env } = tasks(config);
 
 const build = series(env("production"), styles, content);
 

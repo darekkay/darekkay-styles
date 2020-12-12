@@ -1004,10 +1004,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@darekkay/gulp@1.0.3":
-  version "1.0.3"
-  resolved "https://registry.yarnpkg.com/@darekkay/gulp/-/gulp-1.0.3.tgz#7df1d769d0a99b13b1bf4b50ab7bda3699b45f22"
-  integrity sha512-i4c+yboTorfb01R0Z1T9+Pg/QdE80qn6MY1QTDz7cTZLGYRB9+rzGiSvhZ9MqInxjDZnOWlLV9lgiOmW7O0gVA==
+"@darekkay/gulp@1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@darekkay/gulp/-/gulp-1.1.1.tgz#9d55a9427f9b8050922e1b7c9f179f1bc854cd33"
+  integrity sha512-8Tz2Tq96b6jxxvNX4aDIMpnn/FPShWW+76sVEerFy+asrlyKD6pf3hkJGRm4lAg7XzYDy2KY35mhuFb1Y8I45A==
   dependencies:
     "@babel/core" "7.10.5"
     "@babel/preset-env" "7.10.4"
