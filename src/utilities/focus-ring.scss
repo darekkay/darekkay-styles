@@ -1,5 +1,3 @@
-@import "../base/variables";
-
 @mixin focus-ring() {
   // Custom focus indicator
   box-shadow: 0 0 0 0.2rem var(--focus-ring-color);
