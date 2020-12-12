@@ -9,12 +9,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "a11y-contrast": "1.0.0",
-    "copyfiles": "2.3.0",
+    "@darekkay/gulp": "1.0.3",
+    "a11y-contrast": "1.2.0",
     "ejs": "3.1.3",
     "jest": "26.2.2",
     "lodash": "4.17.19",
-    "node-sass": "4.14.1",
     "npm-run-all": "4.1.5",
     "onecolor": "3.1.0",
     "prettier": "2.0.5"
@@ -36,12 +35,11 @@
     "url": "https://github.com/darekkay/darekkay-styles.git"
   },
   "scripts": {
-    "build": "run-s build:**",
-    "build:default": "node-sass src/_all.scss dist/css/styles.css --output-style compressed",
-    "build:template": "node-sass src/_template.scss dist/css/styles-template.css --output-style compressed",
+    "build": "run-s clean build:**",
     "build:colors": "node internals/scripts/list-colors/list-colors.js",
-    "build:docs": "copyfiles -f public/* dist/",
+    "build:css": "gulp build",
     "ci": "npm run test",
+    "clean": "gulp clean",
     "format": "prettier --write .",
     "lint:colors": "npm run build:colors && a11y-contrast public/color-palette.json --min-ratio-3=40 --min-ratio-4.5=50 --min-ratio-7=70",
     "test": "jest && npm run lint:colors"
