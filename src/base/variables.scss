@@ -5,6 +5,12 @@ html {
   --base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --base-font-size: 1.8rem;
+  --base-line-height: 1.5;
+
+  --monospace-font-family: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --monospace-font-size: 1.7rem;
+  --monospace-line-height: 1.5;
 
   --focus-ring-color: hsla(219, 100%, 50%, 0.5);
 
