@@ -31,6 +31,15 @@
         >.
       </p>
 
+      <p>
+        <label for="font-selection">Font preview:</label>
+        <select id="font-selection">
+          <option value="">System Stack</option>
+        </select>
+      </p>
+
+      <hr>
+
       <h1>This is a heading 1</h1>
       <p>
         Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis
@@ -369,5 +378,52 @@
         </svg>
       </div>
     </footer>
+
+    <script>
+      const fonts = [
+        "Abject Failure",
+        "Aldrich",
+        "Anaheim",
+        "Architects Daughter",
+        "Blokk Neue",
+        "Breaking News",
+        "Chicken Script",
+        "Cuprum",
+        "Dosis",
+        "Electrolize",
+        "Garidelli",
+        "Gudea",
+        "HeliosCond",
+        "Hind",
+        "Indie Flower",
+        "Josefin Sans",
+        "Lato",
+        "Mallanna",
+        "My Type",
+        "Nanum Pen",
+        "Noto Sans",
+        "Nunito",
+        "Open Sans",
+        "Orbitron",
+        "Oswald",
+        "Patrick Hand SC",
+        "Quicksand",
+        "Titillium Web",
+        "Varela Round",
+        "Yanone Kaffeesatz"
+      ];
+      const fontSelection = document.querySelector("#font-selection");
+      fonts.forEach(font => {
+        const option = document.createElement("option");
+        option.value = font;
+        option.text = font;
+        fontSelection.appendChild(option);
+      })
+
+      const main = document.querySelector("main");
+      fontSelection.addEventListener("change", (event) => {
+        main.style.cssText = `font-family: ${event.target.value}`;
+      })
+    </script>
   </body>
 </html>

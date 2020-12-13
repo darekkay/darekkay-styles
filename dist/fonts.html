@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./css/styles.css"><title>Fonts</title><style>section{margin-top:3rem;border-bottom:1px solid var(--border-color);padding-bottom:3rem}</style></head><body><header class="inverted"><h1>Fonts</h1></header><main><p><strong>← <a href="./index.html">Home</a></strong></p><p>This is a preview for my font selection. All fonts need to be installed/available locally.</p><hr><section><h2>System Stack</h2><p>Apparently we had reached a <strong>great height</strong> in the atmosphere, for the sky was a dead black, and the stars had <em>ceased to twinkle</em>. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds..</p></section></main><script>// NOTE: Keep the list in style-guide.html in sync
+    const fonts = [
+      "Abject Failure",
+      "Aldrich",
+      "Anaheim",
+      "Architects Daughter",
+      "Blokk Neue",
+      "Breaking News",
+      "Chicken Script",
+      "Cuprum",
+      "Dosis",
+      "Electrolize",
+      "Garidelli",
+      "Gudea",
+      "HeliosCond",
+      "Hind",
+      "Indie Flower",
+      "Josefin Sans",
+      "Lato",
+      "Mallanna",
+      "My Type",
+      "Nanum Pen",
+      "Noto Sans",
+      "Nunito",
+      "Open Sans",
+      "Orbitron",
+      "Oswald",
+      "Patrick Hand SC",
+      "Quicksand",
+      "Titillium Web",
+      "Varela Round",
+      "Yanone Kaffeesatz"
+    ];
+    const template = font => `<h2>${font}</h2>
+      <p>Apparently we had reached a <strong>great height</strong> in the atmosphere, for the sky was a dead black, and the stars had <em>ceased to twinkle</em>. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds..</p>`;
+
+    fonts.forEach(font => {
+      const section = document.createElement("section");
+      section.style.cssText = `font-family: ${font}, "Blokk Neue", monospace;`;
+      section.innerHTML = template(font).trim();
+      document.querySelector("main").appendChild(section);
+    });</script></body></html>
