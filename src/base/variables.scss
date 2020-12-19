@@ -15,14 +15,15 @@ html {
   --focus-ring-color: hsla(219, 100%, 50%, 0.5);
 
   --accent-color: #{$dk-blue-vivid-55};
+  --link-box-shadow-color: transparent;
   --background-light-color: #{$gray-cool-3};
   --border-color: #{$gray-cool-10};
   --code-color: #{$red-cool-vivid-60};
   --code-background-color: #{$magenta-vivid-5};
 
-  --inverted-background-color: #{$dk-blue-75};
   --inverted-font-color: #{$white};
-  --inverted-link-color: #{$yellow-vivid-20};
+  --inverted-background-color: #{$dk-blue-75};
+  --inverted-accent-color: #{$gold-vivid-20};
   --inverted-focus-ring-color: hsla(49, 100%, 49%, 0.5);
 
   --content-max-width: 800px;
