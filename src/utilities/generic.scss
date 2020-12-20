@@ -1,3 +1,23 @@
+// Colors
+
+.text-offset {
+  color: var(--color-text-offset);
+}
+
+.background-offset {
+  background-color: var(--color-background-offset);
+}
+
+// Text Alignment
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
 // Flexbox
 
 .flex {
@@ -40,20 +60,10 @@
   position: absolute;
 }
 
-// Text Alignment
-
-.text-right {
-  text-align: right;
-}
-
-.text-center {
-  text-align: center;
-}
-
 // Border
 
 .border {
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--color-border);
 }
 
 .border-0 {
@@ -62,7 +72,7 @@
 
 @each $direction in (top, right, bottom, left) {
   .border-#{$direction} {
-    border-#{$direction}: 1px solid var(--border-color);
+    border-#{$direction}: 1px solid var(--color-border);
   }
 }
 

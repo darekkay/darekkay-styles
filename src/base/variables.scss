@@ -1,7 +1,6 @@
 @import "colors";
 
-html {
-  --base-font-color: #{$blue-80};
+:root {
   --base-font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
   --base-font-size: 1.8rem;
@@ -12,19 +11,21 @@ html {
   --monospace-font-size: 1.7rem;
   --monospace-line-height: 1.5;
 
-  --focus-ring-color: hsla(219, 100%, 50%, 0.5);
+  --content-max-width: 800px;
 
-  --accent-color: #{$dk-blue-vivid-55};
-  --link-box-shadow-color: transparent;
-  --background-light-color: #{$gray-cool-3};
-  --border-color: #{$gray-cool-10};
-  --code-color: #{$red-cool-vivid-60};
-  --code-background-color: #{$magenta-vivid-5};
+  --color-text: #{$blue-80};
+  --color-text-offset: #{$dk-gray-55};
+  --color-background: #{$white};
+  --color-background-offset: #{$gray-cool-3};
+  --color-primary: #{$dk-blue-vivid-55};
+  --color-border: #{$gray-cool-10};
+  --color-focus-ring: hsla(219, 100%, 50%, 0.5);
+
+  --color-code-text: #{$red-cool-vivid-60};
+  --color-code-background: #{$magenta-vivid-5};
 
   --inverted-font-color: #{$white};
   --inverted-background-color: #{$dk-blue-75};
   --inverted-accent-color: #{$gold-vivid-20};
   --inverted-focus-ring-color: hsla(49, 100%, 49%, 0.5);
-
-  --content-max-width: 800px;
 }
