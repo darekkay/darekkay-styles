@@ -1,5 +1,14 @@
 @import "../mixins/all";
 
+table {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 td,
 th {
   padding: 1rem 2rem 1rem 1rem;
@@ -8,24 +17,4 @@ th {
 
 tbody tr:nth-child(odd) {
   background-color: var(--color-background-offset);
-}
-
-@include breakpoint-md-down() {
-  thead {
-    display: none;
-  }
-  table,
-  tr,
-  td,
-  th,
-  tbody,
-  table caption {
-    display: block;
-  }
-  tr {
-    margin-bottom: 1.5rem;
-  }
-  td {
-    padding: 0.5rem 1rem;
-  }
 }
