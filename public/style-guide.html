@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/highlightjs.css"/>
+    <link rel="stylesheet" href="./css/prismjs.css"/>
     <title>Style Guide</title>
   </head>
 
@@ -125,7 +127,25 @@
 }</pre
       >
 
-      <p>But highlight.js <em>is</em> supported out of the box. Here's some CSS code:</p>
+      <p>Shell commands should be marked as such:</p>
+
+      <pre class="shell">npm install -g static-marks</pre>
+
+      <p>In addition, <code>inline code</code> elements should look great.</p>
+
+      <h3>Prism.js</h3>
+
+      <p>Prism.js is supported out of the box. Here's some CSS code:</p>
+
+      <pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@import</span> <span class="token string">"manual.css"</span><span class="token punctuation">;</span></span><br><br><span class="token selector">h1.mystyle[href^="http"]:lang(en)</span> <span class="token punctuation">{</span><br>  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span> <span class="token comment">/* TODO: change THIS to yellow for next version! */</span><br>  <span class="token property">border</span><span class="token punctuation">:</span> <span class="token function">rgb</span><span class="token punctuation">(</span>255<span class="token punctuation">,</span>0<span class="token punctuation">,</span>0<span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token property">background-color</span><span class="token punctuation">:</span> #FAFAFA<span class="token punctuation">;</span><br>  <span class="token property">background</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span>hello.jpg<span class="token punctuation">)</span></span> <span class="token important">!important</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+      <p>And here's some pro JavaScript code:</p>
+
+      <pre class="language-js"><code class="language-js"><span class="token keyword">function</span> <span class="token function">log</span><span class="token punctuation">(</span><span class="token parameter">message</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"Log:"</span><span class="token punctuation">,</span> message<span class="token punctuation">.</span><span class="token function">replace</span><span class="token punctuation">(</span><span class="token regex"><span class="token regex-delimiter">/</span><span class="token regex-source language-regex">^\s*(.*)</span><span class="token regex-delimiter">/</span></span><span class="token punctuation">,</span> <span class="token string">"moo"</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+
+      <h3>Highlight.js</h3>
+
+      <p>Highlight.js is supported out of the box. Here's some CSS code:</p>
 
       <pre class="hljs" tabindex="0"><code><span class="hljs-keyword">@import</span> <span class="hljs-string">"manual.css"</span>;
 
@@ -143,12 +163,6 @@
   <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Log:"</span>, message.replace(<span class="hljs-regexp">/^\s*(.*)/</span>, <span class="hljs-string">"moo"</span>));
 }
 </code></pre>
-
-      <p>Shell commands should be marked as such:</p>
-
-      <pre class="shell">npm install -g static-marks</pre>
-
-      <p>Finally, <code>inline code</code> elements should look great, too.</p>
 
       <h2 id="ordered-list">Lists</h2>
 

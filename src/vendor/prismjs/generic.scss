@@ -1,0 +1,33 @@
+code[class*="language-"],
+pre[class*="language-"] {
+  font-family: var(--monospace-font-family);
+  font-size: var(--monospace-font-size);
+  line-height: var(--monospace-line-height);
+
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0.5em 0;
+  overflow: auto;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
