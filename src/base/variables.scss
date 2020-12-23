@@ -13,9 +13,9 @@
 
   --content-max-width: 800px;
 
-  --color-text: #{$blue-80};
+  --color-text-default: #{$blue-80};
   --color-text-offset: #{$dk-gray-55};
-  --color-background: #{$white};
+  --color-background-default: #{$white};
   --color-background-offset: #{$gray-cool-3};
   --color-primary: #{$dk-blue-vivid-55};
   --color-border: #{$gray-cool-10};
@@ -28,4 +28,15 @@
   --inverted-background-color: #{$dk-blue-75};
   --inverted-accent-color: #{$gold-vivid-20};
   --inverted-focus-ring-color: hsla(49, 100%, 49%, 0.5);
+
+  --color-tomorrow-background: #202020;
+  --color-tomorrow-foreground: #eaeaea;
+  --color-tomorrow-red: #f1486d;
+  --color-tomorrow-orange: #e78c45;
+  --color-tomorrow-yellow: #e7c547;
+  --color-tomorrow-green: #b9ca4a;
+  --color-tomorrow-blue: #7aa6da;
+  --color-tomorrow-cyan: #9cdcfe;
+  --color-tomorrow-purple: #c397d8;
+  --color-tomorrow-comment: #969896;
 }

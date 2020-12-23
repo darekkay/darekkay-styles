@@ -1,21 +1,10 @@
 .hljs {
-  $tomorrow-background: #202020;
-  $tomorrow-foreground: #eaeaea;
-
-  $tomorrow-red: #f1486d;
-  $tomorrow-orange: #e78c45;
-  $tomorrow-yellow: #e7c547;
-  $tomorrow-green: #b9ca4a;
-  $tomorrow-blue: #7aa6da;
-  $tomorrow-purple: #c397d8;
-  $tomorrow-comment: #969896;
-
-  background: $tomorrow-background;
-  color: $tomorrow-foreground;
+  background: var(--color-tomorrow-background);
+  color: var(--color-tomorrow-foreground);
 
   .hljs-comment,
   .hljs-quote {
-    color: $tomorrow-comment;
+    color: var(--color-tomorrow-comment);
   }
 
   .hljs-variable,
@@ -24,7 +13,7 @@
   .hljs-selector-class,
   .hljs-regexp,
   .hljs-deletion {
-    color: $tomorrow-red;
+    color: var(--color-tomorrow-red);
   }
 
   .hljs-number,
@@ -36,11 +25,11 @@
   .hljs-meta,
   .hljs-link,
   .hljs-setting {
-    color: $tomorrow-orange;
+    color: var(--color-tomorrow-orange);
   }
 
   .hljs-attribute {
-    color: $tomorrow-yellow;
+    color: var(--color-tomorrow-yellow);
   }
 
   .hljs-string,
@@ -48,7 +37,7 @@
   .hljs-bullet,
   .hljs-addition,
   .hljs-value {
-    color: $tomorrow-green;
+    color: var(--color-tomorrow-green);
   }
 
   .hljs-title,
@@ -56,12 +45,12 @@
   .hljs-tag,
   .hljs-selector-attr,
   .hljs-selector-pseudo {
-    color: $tomorrow-blue;
+    color: var(--color-tomorrow-blue);
   }
 
   .hljs-keyword,
   .hljs-name,
   .hljs-selector-tag {
-    color: $tomorrow-purple;
+    color: var(--color-tomorrow-purple);
   }
 }
