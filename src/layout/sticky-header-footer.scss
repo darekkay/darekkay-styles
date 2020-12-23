@@ -55,6 +55,7 @@ footer > * {
 .inverted {
   --color-focus-ring: var(--inverted-focus-ring-color);
   --color-primary: var(--inverted-accent-color);
+  --color-text-default: --inverted-font-color;
   color: var(--inverted-font-color);
   background: var(--inverted-background-color);
 }
