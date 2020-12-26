@@ -8,11 +8,6 @@ code {
   border-radius: 5px;
 }
 
-pre.shell:before {
-  // "$ "
-  content: "\000024\00a0";
-}
-
 pre code {
   padding: 0;
   color: inherit;

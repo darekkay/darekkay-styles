@@ -25,3 +25,9 @@ pre[class*="language-"] {
 .token.italic {
   font-style: italic;
 }
+
+code.language-bash::before,
+.language-bash .line::before {
+  // "$ "
+  content: "\000024\00a0";
+}
