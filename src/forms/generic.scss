@@ -21,19 +21,3 @@ textarea {
   // Textareas only resize vertically by default
   resize: vertical;
 }
-
-[type="text"],
-[type="email"],
-[type="url"],
-[type="password"],
-[type="number"],
-[type="date"],
-[type="datetime-local"],
-[type="month"],
-[type="search"],
-[type="tel"],
-[type="time"],
-textarea,
-select {
-  padding: 0.5rem 0.75rem;
-}

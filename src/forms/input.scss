@@ -1,3 +1,19 @@
+[type="text"],
+[type="email"],
+[type="url"],
+[type="password"],
+[type="number"],
+[type="date"],
+[type="datetime-local"],
+[type="month"],
+[type="search"],
+[type="tel"],
+[type="time"],
+textarea,
+select {
+  padding: 0.5rem 0.75rem;
+}
+
 [type="search"] {
   // Correct the outline style in Safari
   outline-offset: -2px;
@@ -18,4 +34,9 @@
 
   // Change font properties to `inherit` in Safari
   font: inherit;
+}
+
+.input {
+  border-radius: 0.4rem;
+  border: 1px solid var(--color-border);
 }

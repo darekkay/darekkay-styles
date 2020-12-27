@@ -4,4 +4,16 @@ button,
 [type="submit"] {
   // Correct the inability to style clickable types in iOS and Safari
   -webkit-appearance: button;
+  padding: 0.5rem 1.25rem;
+}
+
+.btn {
+  border: none;
+  border-radius: 0.4rem;
+  color: var(--inverted-font-color);
+  background-color: var(--inverted-background-color);
+
+  &:active {
+    transform: translateY(1px);
+  }
 }
