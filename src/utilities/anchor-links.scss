@@ -1,26 +1,16 @@
-a.anchor {
-  display: flex;
-  align-items: center;
+@import "../mixins/all";
 
-  position: absolute;
-  margin-left: -2rem;
-  width: 2rem;
-  height: 100%;
+a.anchor {
+  margin-right: 1rem;
 }
 
 a.anchor:hover {
   box-shadow: none;
 }
 
-a.anchor:before {
-  background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNiAxNiI+PHBhdGggZD0iTTQgOWgxdjFINGMtMS41IDAtMy0xLjY5LTMtMy41UzIuNTUgMyA0IDNoNGMxLjQ1IDAgMyAxLjY5IDMgMy41IDAgMS40MS0uOTEgMi43Mi0yIDMuMjVWOC41OWMuNTgtLjQ1IDEtMS4yNyAxLTIuMDlDMTAgNS4yMiA4Ljk4IDQgOCA0SDRjLS45OCAwLTIgMS4yMi0yIDIuNVMzIDkgNCA5em05LTNoLTF2MWgxYzEgMCAyIDEuMjIgMiAyLjVTMTMuOTggMTIgMTMgMTJIOWMtLjk4IDAtMi0xLjIyLTItMi41IDAtLjgzLjQyLTEuNjQgMS0yLjA5VjYuMjVjLTEuMDkuNTMtMiAxLjg0LTIgMy4yNUM2IDExLjMxIDcuNTUgMTMgOSAxM2g0YzEuNDUgMCAzLTEuNjkgMy0zLjVTMTQuNSA2IDEzIDZ6Ii8+PC9zdmc+")
-    no-repeat;
-  width: 1.5rem;
-  height: 1.5rem;
-  display: block;
-  content: "";
-
-  visibility: hidden;
+.icon--anchor {
+  width: 1.6rem;
+  height: 1.6rem;
 }
 
 h2,
@@ -30,10 +20,9 @@ h5 {
   position: relative;
 }
 
-.anchor:focus:before,
-h2:hover .anchor:before,
-h3:hover .anchor:before,
-h4:hover .anchor:before,
-h5:hover .anchor:before {
-  visibility: visible;
+@media (min-width: 850px) {
+  a.anchor {
+    position: absolute;
+    left: -2.7rem;
+  }
 }
