@@ -26,8 +26,8 @@ pre[class*="language-"] {
   font-style: italic;
 }
 
-code.language-bash::before,
-.language-bash .line::before {
+code.language-shell::before,
+.language-shell .line::before {
   // "$ "
   content: "\000024\00a0";
 }
