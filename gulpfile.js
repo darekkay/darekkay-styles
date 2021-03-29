@@ -1,36 +1,33 @@
-const { join } = require("path");
 const { gulp, tasks } = require("@darekkay/gulp");
-
-const path = (...arguments) => join(__dirname, ...arguments);
 
 const config = {
   paths: {
     assets: {
-      source: path("src", "fonts", "nunito"),
-      destination: path("dist", "css", "fonts"),
+      source: "src/fonts/nunito",
+      destination: "dist/css/fonts",
     },
 
-    destination: path("dist"),
+    destination: "dist",
 
-    content: path("public") + "/**/*.html",
+    content: "public/**/*.html",
 
     styles: [
       {
-        source: path("src", "_all.scss"),
-        destination: path("dist", "css"),
-        watch: path("src"),
+        source: "src/_all.scss",
+        destination: "dist/css",
+        watch: "src",
       },
       {
-        source: path("src", "vendor", "highlightjs", "_all.scss"),
-        destination: path("dist", "css"),
+        source: "src/vendor/highlightjs/_all.scss",
+        destination: "dist/css",
         fileName: "highlightjs.css",
-        watch: path("src"),
+        watch: "src",
       },
       {
-        source: path("src", "vendor", "prismjs", "_all.scss"),
-        destination: path("dist", "css"),
+        source: "src/vendor/prismjs/_all.scss",
+        destination: "dist/css",
         fileName: "prismjs.css",
-        watch: path("src"),
+        watch: "src",
       },
     ],
   },
