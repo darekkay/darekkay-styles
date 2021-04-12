@@ -3,7 +3,7 @@ const { gulp, tasks } = require("@darekkay/gulp");
 const config = {
   paths: {
     assets: {
-      source: "src/fonts/nunito",
+      source: "src/fonts/nunito/**/*",
       destination: "dist/css/fonts",
     },
 
