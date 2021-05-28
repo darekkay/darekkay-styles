@@ -12,17 +12,17 @@
     "@darekkay/gulp": "1.7.0",
     "a11y-contrast": "1.2.0",
     "ejs": "3.1.6",
-    "jest": "26.6.3",
+    "jest": "27.0.1",
     "lodash": "4.17.21",
     "npm-run-all": "4.1.5",
     "onecolor": "3.1.0",
-    "prettier": "2.2.1"
+    "prettier": "2.3.0"
   },
   "files": [
     "src",
     "dist"
   ],
-  "homepage": "https://github.com/darekkay/darekkay-styles",
+  "homepage": "https://darekkay.com/style-guide/",
   "keywords": [
     "css",
     "darekkay",
