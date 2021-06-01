@@ -20,7 +20,8 @@
   },
   "files": [
     "src",
-    "dist"
+    "dist",
+    "tailwind.config.js"
   ],
   "homepage": "https://darekkay.com/style-guide/",
   "keywords": [
