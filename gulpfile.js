@@ -2,10 +2,16 @@ const { gulp, tasks } = require("@darekkay/gulp");
 
 const config = {
   paths: {
-    assets: {
-      source: "src/fonts/nunito/**/*",
-      destination: "dist/css/fonts",
-    },
+    assets: [
+      {
+        source: "src/fonts/nunito/**/*",
+        destination: "dist/css/fonts",
+      },
+      {
+        source: "public/assets/**/*",
+        destination: "dist/assets",
+      },
+    ],
 
     destination: "dist",
 
@@ -29,8 +35,16 @@ const config = {
         fileName: "prismjs.css",
         watch: "src",
       },
+      {
+        source: "src/vendor/tailwind/_all.scss",
+        destination: "dist/css",
+        fileName: "tailwind.css",
+        watch: "src",
+      },
     ],
   },
+
+  postcssPlugins: ["tailwindcss", "autoprefixer"],
 };
 
 const { series } = gulp;

@@ -10,8 +10,8 @@ button,
 .btn {
   border: none;
   border-radius: 0.4rem;
-  color: var(--inverted-font-color);
-  background-color: var(--inverted-background-color);
+  color: var(--inverted-color-text-default);
+  background-color: var(--inverted-color-background-default);
 
   &:active {
     transform: translateY(1px);

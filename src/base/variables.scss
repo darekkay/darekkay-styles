@@ -13,21 +13,31 @@
 
   --content-max-width: 800px;
 
+  --color-accent: #{$violet-vivid-60};
+
   --color-text-default: #{$blue-80};
   --color-text-offset: #{$dk-gray-55};
+  --color-text-accent: var(--color-accent);
+  --color-text-interaction: #{$dk-blue-vivid-55};
+  --color-text-success: #{$green-50};
+  --color-text-danger: #{$red-50};
+
   --color-background-default: #{$white};
   --color-background-offset: #{$gray-cool-3};
-  --color-primary: #{$dk-blue-vivid-55};
-  --color-border: #{$gray-cool-10};
-  --color-focus-ring: hsla(219, 100%, 50%, 0.5);
+  --color-background-success: #{$green-vivid-5};
+  --color-background-warning: #{$orange-vivid-5};
+  --color-background-danger: #{$red-vivid-5};
+  --color-background-info: #{$blue-warm-vivid-5};
 
+  --color-border: #{$gray-cool-10};
   --color-code-text: #{$red-cool-vivid-60};
   --color-code-background: #{$magenta-vivid-5};
+  --color-focus-ring: hsla(219, 100%, 50%, 0.5);
 
-  --inverted-font-color: #{$white};
-  --inverted-background-color: #{$dk-blue-75};
-  --inverted-accent-color: #{$gold-vivid-20};
-  --inverted-focus-ring-color: hsla(49, 100%, 49%, 0.5);
+  --inverted-color-text-default: #{$white};
+  --inverted-color-background-default: #{$dk-blue-75};
+  --inverted-color-text-interaction: #{$gold-vivid-20};
+  --inverted-color-focus-ring: hsla(49, 100%, 49%, 0.5);
 
   --color-tomorrow-background: #202020;
   --color-tomorrow-foreground: #eaeaea;

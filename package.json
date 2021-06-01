@@ -7,7 +7,9 @@
     "url": "https://github.com/darekkay/darekkay-styles/issues",
     "email": "hello@darekkay.com"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@types/tailwindcss": "2.0.5"
+  },
   "devDependencies": {
     "@darekkay/gulp": "1.7.0",
     "a11y-contrast": "1.2.0",
@@ -20,7 +22,8 @@
   },
   "files": [
     "src",
-    "dist"
+    "dist",
+    "tailwind.config.js"
   ],
   "homepage": "https://darekkay.com/style-guide/",
   "keywords": [

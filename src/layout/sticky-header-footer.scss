@@ -52,14 +52,6 @@ footer > * {
   margin: 0.6rem;
 }
 
-.inverted {
-  --color-focus-ring: var(--inverted-focus-ring-color);
-  --color-primary: var(--inverted-accent-color);
-  --color-text-default: --inverted-font-color;
-  color: var(--inverted-font-color);
-  background: var(--inverted-background-color);
-}
-
 .github-icon {
   height: 2rem;
   width: 2rem;

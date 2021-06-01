@@ -1,0 +1,9 @@
+.inverted {
+  --color-text-default: var(--inverted-color-text-default);
+  --color-text-interaction: var(--inverted-color-text-interaction);
+  --color-background-default: var(--inverted-color-background-default);
+  --color-focus-ring: var(--inverted-color-focus-ring);
+
+  color: var(--inverted-color-text-default);
+  background: var(--inverted-color-background-default);
+}

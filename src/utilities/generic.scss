@@ -8,12 +8,36 @@
   color: var(--color-text-offset);
 }
 
+.text-accent {
+  color: var(--color-text-accent);
+}
+
+.text-interaction {
+  color: var(--color-text-interaction);
+}
+
+.text-success {
+  color: var(--color-text-success);
+}
+
+.text-danger {
+  color: var(--color-text-danger);
+}
+
 .bg-default {
   background-color: var(--color-background-default);
 }
 
 .bg-offset {
   background-color: var(--color-background-offset);
+}
+
+.event\:bg-offset {
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: var(--color-background-offset);
+  }
 }
 
 // Text Alignment
