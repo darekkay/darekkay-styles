@@ -15,10 +15,10 @@ main {
   width: 100%;
   max-width: var(--content-max-width);
   margin: 5rem auto;
-  padding: 0 1.5rem;
+  padding: 0 var(--content-horizontal-padding-xs);
 
   @include breakpoint-md-up() {
-    padding: 0 2.5rem;
+    padding: 0 var(--content-horizontal-padding-md);
   }
 }
 

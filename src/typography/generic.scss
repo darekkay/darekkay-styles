@@ -1,3 +1,5 @@
+@import "../mixins/all";
+
 html {
   // font-size 1em = 10px on default browser settings
   font-size: 62.5%;
@@ -28,9 +30,15 @@ samp {
 
 pre {
   overflow: auto;
-  padding: 1.5rem;
+  padding: var(--content-horizontal-padding-xs);
+  margin-left: calc(var(--content-horizontal-padding-xs) * -1);
+  margin-right: calc(var(--content-horizontal-padding-xs) * -1);
+
   background-color: var(--color-background-offset);
-  border-radius: 5px;
+
+  @include breakpoint-md-up() {
+    border-radius: 5px;
+  }
 }
 
 a {

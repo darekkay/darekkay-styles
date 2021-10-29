@@ -3,9 +3,9 @@
 main {
   max-width: var(--content-max-width);
   margin: 0 auto;
-  padding: 2rem 1.5rem;
+  padding: 2rem var(--content-horizontal-padding-xs);
 
   @include breakpoint-md-up() {
-    padding: 2rem 2.5rem;
+    padding: 2rem var(--content-horizontal-padding-md);
   }
 }
