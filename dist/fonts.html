@@ -8,7 +8,7 @@
       "Assistant",
       "Blokk Neue",
       "Breaking News",
-      "Chicken Script",
+      "Cookie",
       "Cuprum",
       "Dosis",
       "Electrolize",
@@ -17,25 +17,25 @@
       "HeliosCond",
       "Hind",
       "Indie Flower",
-      "Josefin Sans",
       "Lato",
-      "Mallanna",
+      "Lobster Two",
       "My Type",
       "Nanum Pen",
       "Noto Sans",
       "Nunito",
+      "Oleo Script",
       "Open Sans",
       "Orbitron",
       "Oswald",
       "Patrick Hand SC",
       "Quicksand",
       "Redacted Script",
+      "Road Rage",
       "Titillium Web",
-      "Varela Round",
       "Yanone Kaffeesatz"
     ];
-    const template = font => `<h2>${font}</h2>
-      <p>Apparently we had reached a <strong>great height</strong> in the atmosphere, for the sky was a dead black, and the stars had <em>ceased to twinkle</em>. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds..</p>`;
+    const template = font => `<h2 title="${font}">${font}</h2>
+      <p>Apparently we had reached a <strong>great height</strong> in the atmosphere, for the sky was a dead black, and the stars had <em>ceased to twinkle</em>. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. (äöüÄÖÜß)</p>`;
 
     fonts.forEach(font => {
       const section = document.createElement("section");
