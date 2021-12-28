@@ -20,6 +20,9 @@
     "onecolor": "3.1.0",
     "prettier": "2.5.1"
   },
+  "engines": {
+    "node": ">=12.22.0"
+  },
   "files": [
     "src",
     "dist",
