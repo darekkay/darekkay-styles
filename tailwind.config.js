@@ -6,6 +6,7 @@
  * - Default configuration: https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js
  */
 
+/** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig.theme} */
 const theme = {
   screens: {
     md: "768px",
@@ -186,6 +187,7 @@ const theme = {
   },
 };
 
+/** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig.variants} */
 const variants = {
   // Base
   display: ["responsive"],
@@ -250,6 +252,7 @@ const variants = {
 };
 
 /* To enable a plugin, remove the plugin from this object and add it to the variants. */
+/** @type {Record<import('@types/tailwindcss/tailwind-config').TailwindCorePlugin, false>} */
 const disabledPlugins = {
   accessibility: false,
   alignContent: false,
@@ -271,6 +274,7 @@ const disabledPlugins = {
   backgroundClip: false,
   backgroundImage: false,
   backgroundOpacity: false,
+  backgroundOrigin: false,
   backgroundPosition: false,
   backgroundRepeat: false,
   backgroundSize: false,
@@ -283,8 +287,10 @@ const disabledPlugins = {
   boxDecorationBreak: false,
   boxSizing: false,
   brightness: false,
+  caretColor: false,
   clear: false,
   container: false,
+  content: false,
   contrast: false,
   divideColor: false,
   divideOpacity: false,
@@ -369,6 +375,8 @@ const corePlugins = {
 
 /** @type {import('@types/tailwindcss/tailwind-config').TailwindConfig} */
 module.exports = {
+  /** aot | jit */
+  mode: "aot",
   purge: false,
   prefix: "",
   important: false,
