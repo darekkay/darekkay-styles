@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@darekkay/gulp": "1.8.2",
+    "@darekkay/logger": "1.2.0",
     "a11y-contrast": "1.2.0",
     "ejs": "3.1.6",
     "jest": "27.4.5",
@@ -44,10 +45,12 @@
     "build": "run-s clean build:**",
     "build:colors": "node internals/scripts/list-colors/list-colors.js",
     "build:gulp": "gulp build",
-    "ci": "npm run test",
+    "ci": "run-s --continue-on-error lint test",
     "clean": "gulp clean",
     "format": "prettier --write .",
+    "lint": "run-s --continue-on-error lint:*",
     "lint:colors": "npm run build:colors && a11y-contrast public/color-palette.json --min-ratio-3=40 --min-ratio-4.5=50 --min-ratio-7=70",
-    "test": "jest && npm run lint:colors"
+    "lint:themes": "node internals/scripts/verify-themes/verify-themes.js",
+    "test": "jest"
   }
 }

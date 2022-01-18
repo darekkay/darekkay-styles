@@ -1,4 +1,4 @@
-// Colors
+// Text colors
 
 .text-default {
   color: var(--color-text-default);
@@ -24,6 +24,16 @@
   color: var(--color-text-danger);
 }
 
+// Background colors
+
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-inherit {
+  background-color: inherit;
+}
+
 .bg-default {
   background-color: var(--color-background-default);
 }
@@ -38,6 +48,22 @@
   &:active {
     background-color: var(--color-background-offset);
   }
+}
+
+.bg-success {
+  background-color: var(--color-background-success);
+}
+
+.bg-warning {
+  background-color: var(--color-background-warning);
+}
+
+.bg-danger {
+  background-color: var(--color-background-danger);
+}
+
+.bg-info {
+  background-color: var(--color-background-info);
 }
 
 // Text Alignment
@@ -72,6 +98,10 @@
   justify-content: center;
 }
 
+.justify-around {
+  justify-content: space-around;
+}
+
 // Width / Height
 
 .w-full {
@@ -95,7 +125,8 @@
 // Border
 
 .border {
-  border: 1px solid var(--color-border);
+  --border-color: var(--color-border-default);
+  border: 1px solid var(--border-color);
 }
 
 .border-0 {
@@ -104,8 +135,28 @@
 
 @each $direction in (top, right, bottom, left) {
   .border-#{$direction} {
-    border-#{$direction}: 1px solid var(--color-border);
+    border-#{$direction}: 1px solid var(--color-border-default);
   }
+}
+
+.border-transparent {
+  --border-color: transparent;
+}
+
+.border-success {
+  --border-color: var(--color-border-success);
+}
+
+.border-warning {
+  --border-color: var(--color-border-warning);
+}
+
+.border-danger {
+  --border-color: var(--color-border-danger);
+}
+
+.border-info {
+  --border-color: var(--color-border-info);
 }
 
 .rounded {

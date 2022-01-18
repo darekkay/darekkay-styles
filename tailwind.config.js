@@ -152,7 +152,14 @@ const theme = {
   },
 
   /* This is useful to keep the border color the same as background */
-  borderColor: (theme) => theme("backgroundColor"),
+  borderColor: {
+    transparent: "transparent",
+
+    success: "var(--color-border-success)",
+    warning: "var(--color-border-warning)",
+    danger: "var(--color-border-danger)",
+    info: "var(--color-border-info)",
+  },
 
   // Misc
 

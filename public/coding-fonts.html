@@ -1,16 +1,19 @@
 <!doctype html>
-<html lang="en">
-
+<html lang="en" data-theme="default">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.css"/>
   <link rel="stylesheet" href="./css/highlightjs.css"/>
   <title>Coding Fonts</title>
+  <script>(function() {
+    document.documentElement.dataset.theme = localStorage.getItem("theme")
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
+  })();</script>
   <style>
     section {
       margin-top: 3rem;
-      border-bottom: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border-default);
       padding-bottom: 3rem;
     }
 
@@ -22,8 +25,10 @@
 
 <body>
 
-  <header class="inverted">
+  <header class="inverted justify-around">
+    <span></span>
     <h1>Coding Fonts</h1>
+    <div class="dk-theme-picker"></div>
   </header>
 
   <main>
@@ -59,6 +64,8 @@
       document.querySelector("main").appendChild(section);
     });
   </script>
+
+  <script src="./scripts/index.min.js"></script>
 </body>
 
 </html>

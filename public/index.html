@@ -1,15 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="default">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="./css/styles.css"/>
   <title>@darekkay/styles</title>
+  <script>(function() {
+    document.documentElement.dataset.theme = localStorage.getItem("theme")
+      || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
+  })();</script>
 </head>
 
 <body>
-  <header class="inverted">
+  <header class="inverted justify-around">
+    <span></span>
     <h1>@darekkay/styles</h1>
+    <div class="dk-theme-picker"></div>
   </header>
 
   <main>
@@ -55,5 +61,7 @@
       </svg>
     </div>
   </footer>
+
+  <script src="./scripts/index.min.js"></script>
 </body>
 </html>

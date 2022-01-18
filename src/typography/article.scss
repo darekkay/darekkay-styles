@@ -14,14 +14,10 @@ figure,
   }
 }
 
-hr {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
 blockquote {
   margin-top: 3rem;
   margin-bottom: 3rem;
+  font-style: italic;
 }
 
 // Lists
@@ -55,6 +51,13 @@ li + li {
   margin-top: 0.5rem;
 }
 
+$hr-margin-y: 4rem;
+
+hr {
+  margin-top: $hr-margin-y;
+  margin-bottom: $hr-margin-y;
+}
+
 // Headlines
 
 h1 {
@@ -72,6 +75,10 @@ h2 {
 
   &:not(:first-child) {
     margin-top: 5.8rem;
+
+    hr + & {
+      margin-top: $hr-margin-y;
+    }
   }
 }
 

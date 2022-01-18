@@ -1,17 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="default">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/tailwind.css"/>
     <link rel="stylesheet" href="./css/highlightjs.css"/>
     <link rel="stylesheet" href="./css/prismjs.css"/>
     <title>Style Guide</title>
+    <script>(function() {
+      document.documentElement.dataset.theme = localStorage.getItem("theme")
+        || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
+    })();</script>
+    <style>
+      .rectangle { width: 160px; height: 60px; margin: 0.5rem 1rem; border-left-width: 5px; }
+    </style>
   </head>
 
   <body>
-    <header class="inverted">
+    <header class="inverted justify-around">
+      <span></span>
       <h1>Style Guide</h1>
+      <div class="dk-theme-picker"></div>
     </header>
 
     <main>
@@ -35,10 +45,52 @@
 
       <p>
         <label for="font-selection">Font preview:</label>
-        <select id="font-selection" class="input">
+        <select id="font-selection" class="input" style="margin-left: 1rem;">
           <option value="">Default</option>
         </select>
       </p>
+
+      <!-- TODO: Remove when done -->
+      <div style="position: fixed; top: 250px; left: 20px;" class="dk-theme-picker"></div>
+
+      <hr>
+
+      <h2>Color definitions</h2>
+
+      <ul>
+        <li><span class="text-default">.text-<span class="font-bold">default</span></span></li>
+        <li><span class="text-offset">.text-<span class="font-bold">offset</span></span></li>
+        <li><span class="text-accent">.text-<span class="font-bold">accent</span></span></li>
+        <li><span class="text-interaction">.text-<span class="font-bold">interaction</span></span></li>
+        <li><span class="text-success">.text-<span class="font-bold">success</span></span></li>
+        <li><span class="text-danger">.text-<span class="font-bold">danger</span></span></li>
+      </ul>
+
+      <div class="flex flex-wrap">
+        <div class="rectangle flex justify-center items-center rounded bg-default border">
+          .bg-<span class="font-bold">default</span>
+        </div>
+        <div class="rectangle flex justify-center items-center rounded bg-offset border">
+          .bg-<span class="font-bold">offset</span>
+        </div>
+        <blockquote class="rectangle flex justify-center items-center">
+          blockquote
+        </blockquote>
+      </div>
+      <div class="flex flex-wrap">
+        <div class="rectangle flex justify-center items-center rounded bg-success border border-success">
+          .bg-<span class="font-bold">success</span>
+        </div>
+        <div class="rectangle flex justify-center items-center rounded bg-warning border border-warning">
+          .bg-<span class="font-bold">warning</span>
+        </div>
+        <div class="rectangle flex justify-center items-center rounded bg-danger border border-danger">
+          .bg-<span class="font-bold">danger</span>
+        </div>
+        <div class="rectangle flex justify-center items-center rounded bg-info border border-info">
+          .bg-<span class="font-bold">info</span>
+        </div>
+      </div>
 
       <hr>
 
@@ -115,7 +167,7 @@
         I think most people are going to use highlight.js or Prism or something
         if they want to style their code blocks but it wouldn't hurt to make
         them look <em>okay</em> out of the box, even with no syntax
-        highlighting.
+        highlighting:
       </p>
 
       <pre>
@@ -125,6 +177,13 @@
   "version": "1.0.7"
 }</pre
       >
+
+      <p>This works for file structures as well:</p>
+
+      <pre><code>├─ 📁 workspace-a
+|  └─ 📄 package.json
+└─ 📄 package.json
+</code></pre>
 
       <p>Shell commands should be marked as such:</p>
 
@@ -233,11 +292,7 @@
       <p>The <b>b element</b> example</p>
       <p>The <cite>cite element</cite> example</p>
       <p>The <code>code element</code> example</p>
-      <p>
-        The
-        <data value="3967381398">data element</data>
-        example
-      </p>
+      <p>The <data value="3967381398">data element</data> example</p>
       <p>
         The
         <del>del element</del>
@@ -267,7 +322,6 @@
         <small>small element</small>
         example
       </p>
-      <p>The <span>span element</span> example</p>
       <p>The <strong>strong element</strong> example</p>
       <p>The <sub>sub element</sub> example</p>
       <p>The <sup>sup element</sup> example</p>
@@ -354,7 +408,7 @@
       <p>
         <label class="inline-flex items-center">
           <input type="checkbox" checked />
-          <span>Email me news and special offers</span>
+          <span style="margin-left: 0.8rem;">Email me news and special offers</span>
         </label>
       </p>
       <p>
@@ -444,5 +498,7 @@
         main.style.cssText = `font-family: ${event.target.value}`;
       })
     </script>
+
+    <script src="./scripts/index.min.js"></script>
   </body>
 </html>

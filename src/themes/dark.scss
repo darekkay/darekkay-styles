@@ -1,0 +1,44 @@
+/*
+ * Theme: Dark
+ */
+
+@import "../base/colors";
+
+[data-theme="dark"] {
+  $dk-orange-70: #614527;
+
+  --color-accent: #{$blue-20};
+
+  --color-text-default: #{$white};
+  --color-text-offset: #{$gray-20};
+  --color-text-accent: var(--color-accent);
+  --color-text-interaction: #{$gold-vivid-20};
+  --color-text-success: #{$green-warm-vivid-30};
+  --color-text-danger: #{$red-vivid-30};
+
+  --color-background-default: #{$gray-cool-80};
+  --color-background-offset: #{$gray-cool-90};
+  --color-background-success: #{$green-70};
+  --color-background-warning: #{$dk-orange-70};
+  --color-background-danger: #{$red-70};
+  --color-background-info: #{$blue-warm-70};
+
+  --color-border-default: #{$gray-warm-60};
+  --color-border-success: #{$green-40};
+  --color-border-warning: #{$orange-40};
+  --color-border-danger: #{$red-40};
+  --color-border-info: #{$blue-40};
+
+  --color-focus-ring: #{$gold-vivid-40};
+
+  --color-box-shadow: rgba(0, 0, 0, 0.5);
+  --color-backdrop: rgba(0, 0, 0, 0.6);
+
+  --button-primary-color-text: #{$black};
+  --button-primary-color-background: var(--color-text-interaction);
+
+  --inverted-color-text-default: #{$white};
+  --inverted-color-background-default: #{$gray-cool-90};
+  --inverted-color-text-interaction: var(--color-text-interaction);
+  --inverted-color-focus-ring: hsla(49, 100%, 49%, 0.5);
+}

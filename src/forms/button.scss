@@ -10,10 +10,15 @@ button,
 .btn {
   border: none;
   border-radius: 0.4rem;
-  color: var(--inverted-color-text-default);
-  background-color: var(--inverted-color-background-default);
+  color: var(--button-primary-color-text);
+  background-color: var(--button-primary-color-background);
 
   &:active {
     transform: translateY(1px);
+  }
+
+  &:hover,
+  &:active {
+    filter: saturate(70%);
   }
 }

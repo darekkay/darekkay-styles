@@ -11,6 +11,10 @@ const config = {
         source: "public/assets/**/*",
         destination: "dist/assets",
       },
+      {
+        source: "public/scripts/**/*",
+        destination: "dist/scripts",
+      },
     ],
 
     destination: "dist",
@@ -42,14 +46,19 @@ const config = {
         watch: "src",
       },
     ],
+
+    scripts: {
+      source: "public/scripts/**/*",
+      destination: "dist/scripts",
+    },
   },
 
   postcssPlugins: ["tailwindcss", "autoprefixer"],
 };
 
 const { series } = gulp;
-const { clean, styles, content, assets, env } = tasks(config);
+const { clean, styles, scripts, content, assets, env } = tasks(config);
 
-const build = series(env("production"), styles, assets, content);
+const build = series(env("production"), styles, scripts, assets, content);
 
 module.exports = { clean, build };

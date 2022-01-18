@@ -1,4 +1,4 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./css/styles.css"><link rel="stylesheet" href="./css/highlightjs.css"><title>Coding Fonts</title><style>section{margin-top:3rem;border-bottom:1px solid var(--color-border);padding-bottom:3rem}code,pre{font-family:inherit}</style></head><body><header class="inverted"><h1>Coding Fonts</h1></header><main><p><strong>← <a href="./index.html">Home</a></strong></p><p>This is a preview for my font selection. All fonts need to be installed/available locally.</p><p>Compare coding fonts at <a href="https://www.codingfont.com/" target="_blank" rel="noopener">codingfont.com</a> and <a href="https://www.programmingfonts.org/" target="_blank" rel="noopener">programmingfonts.org</a></p><hr></main><script>const fonts = [
+<!doctype html><html lang="en" data-theme="default"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="./css/styles.css"><link rel="stylesheet" href="./css/highlightjs.css"><title>Coding Fonts</title><script>document.documentElement.dataset.theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"default")</script><style>section{margin-top:3rem;border-bottom:1px solid var(--color-border-default);padding-bottom:3rem}code,pre{font-family:inherit}</style></head><body><header class="inverted justify-around"><span></span><h1>Coding Fonts</h1><div class="dk-theme-picker"></div></header><main><p><strong>← <a href="./index.html">Home</a></strong></p><p>This is a preview for my font selection. All fonts need to be installed/available locally.</p><p>Compare coding fonts at <a href="https://www.codingfont.com/" target="_blank" rel="noopener">codingfont.com</a> and <a href="https://www.programmingfonts.org/" target="_blank" rel="noopener">programmingfonts.org</a></p><hr></main><script>const fonts = [
       "Consolas",
       "Fira Code",
       "Inconsolata",
@@ -20,4 +20,4 @@
       section.style.cssText = `font-family: ${font}, "Blokk Neue", sans-serif;`;
       section.innerHTML = template(font).trim();
       document.querySelector("main").appendChild(section);
-    });</script></body></html>
+    });</script><script src="./scripts/index.min.js"></script></body></html>
