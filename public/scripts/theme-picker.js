@@ -14,13 +14,13 @@ const svgIcon = (path, theme) => `<svg xmlns="http://www.w3.org/2000/svg" xmlns:
 
 const getNextTheme = (theme) => theme === "default" ? "dark" : "default";
 
-const getTitle = (theme) => `Switch to ${theme} theme`;
+const getTitle = (currentTheme) => `Switch to ${getNextTheme(currentTheme)} theme`;
 
 [...document.querySelectorAll(THEME_PICKER_SELECTOR)].forEach((themePickerElement) => {
   const button = document.createElement("button");
   button.className = "btn flex items-center justify-center border-0 rounded-full";
   button.innerHTML = `${svgIcon(ICON_LIGHT, "default")} ${svgIcon(ICON_DARK, "dark")}`;
-  button.title = getTitle(getNextTheme(document.documentElement.dataset.theme));
+  button.title = getTitle(document.documentElement.dataset.theme);
 
   button.addEventListener("click", () => {
     const nextTheme = getNextTheme(document.documentElement.dataset.theme);
@@ -31,3 +31,16 @@ const getTitle = (theme) => `Switch to ${theme} theme`;
 
   themePickerElement.appendChild(button);
 });
+
+// sync color scheme preference changes
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", function(event) {
+    const nextTheme = event.matches ? "dark" : "default";
+    document.documentElement.dataset.theme = nextTheme;
+    localStorage.setItem("theme", nextTheme);
+
+    [...document.querySelectorAll(`${THEME_PICKER_SELECTOR} button`)].forEach((themePickerButton) => {
+      themePickerButton.title = getTitle(nextTheme);
+    });
+  });
