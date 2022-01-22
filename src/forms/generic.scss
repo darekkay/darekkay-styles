@@ -21,3 +21,8 @@ textarea {
   // Textareas only resize vertically by default
   resize: vertical;
 }
+
+input,
+progress {
+  accent-color: var(--color-text-interaction);
+}
