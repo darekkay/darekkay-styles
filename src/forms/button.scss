@@ -19,6 +19,6 @@ button,
 
   &:hover,
   &:active {
-    filter: saturate(70%);
+    filter: saturate(70%) brightness(120%);
   }
 }
