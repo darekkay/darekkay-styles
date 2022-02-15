@@ -9,6 +9,7 @@
     document.documentElement.dataset.theme = localStorage.getItem("theme")
       || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
   })();</script>
+  <script src="scripts/fonts.js"></script>
   <style>
     section {
       margin-top: 3rem;
@@ -33,50 +34,10 @@
   </main>
 
   <script>
-    // NOTE: Keep the list in style-guide.html in sync
-    const fonts = [
-      "Abject Failure",
-      "Aldrich",
-      "Anaheim",
-      "Anton",
-      "Apple Chancery",
-      "Architects Daughter",
-      "Assistant",
-      "Blokk Neue",
-      "Breaking News",
-      "Caveat",
-      "Cookie",
-      "Cuprum",
-      "Dosis",
-      "Electrolize",
-      "Garidelli",
-      "Gloria Hallelujah",
-      "Gudea",
-      "HeliosCond",
-      "Hind",
-      "Indie Flower",
-      "Kalam",
-      "Lato",
-      "Lobster Two",
-      "My Type",
-      "Nanum Pen",
-      "Noto Sans",
-      "Nunito",
-      "Oleo Script",
-      "Open Sans",
-      "Orbitron",
-      "Oswald",
-      "Patrick Hand SC",
-      "Quicksand",
-      "Redacted Script",
-      "Road Rage",
-      "Titillium Web",
-      "Yanone Kaffeesatz"
-    ];
     const template = font => `<h2 title="${font}">${font}</h2>
       <p>Apparently we had reached a <strong>great height</strong> in the atmosphere, for the sky was a dead black, and the stars had <em>ceased to twinkle</em>. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. (äöüÄÖÜß)</p>`;
 
-    fonts.forEach(font => {
+    window.dk_fonts.regular.forEach(font => {
       const section = document.createElement("section");
       section.style.cssText = `font-family: ${font}, "Blokk Neue", monospace;`;
       section.innerHTML = template(font).trim();

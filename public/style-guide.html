@@ -12,6 +12,7 @@
       document.documentElement.dataset.theme = localStorage.getItem("theme")
         || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
     })();</script>
+    <script src="scripts/fonts.js"></script>
     <style>
       .rectangle { width: 160px; height: 60px; margin: 0.5rem 1rem; border-left-width: 5px; }
     </style>
@@ -447,47 +448,8 @@
     </footer>
 
     <script>
-      const fonts = [
-        "Abject Failure",
-        "Aldrich",
-        "Anaheim",
-        "Anton",
-        "Apple Chancery",
-        "Architects Daughter",
-        "Assistant",
-        "Blokk Neue",
-        "Breaking News",
-        "Caveat",
-        "Cookie",
-        "Cuprum",
-        "Dosis",
-        "Electrolize",
-        "Garidelli",
-        "Gloria Hallelujah",
-        "Gudea",
-        "HeliosCond",
-        "Hind",
-        "Indie Flower",
-        "Kalam",
-        "Lato",
-        "Lobster Two",
-        "My Type",
-        "Nanum Pen",
-        "Noto Sans",
-        "Nunito",
-        "Oleo Script",
-        "Open Sans",
-        "Orbitron",
-        "Oswald",
-        "Patrick Hand SC",
-        "Quicksand",
-        "Redacted Script",
-        "Road Rage",
-        "Titillium Web",
-        "Yanone Kaffeesatz"
-      ];
       const fontSelection = document.querySelector("#font-selection");
-      fonts.forEach(font => {
+      window.dk_fonts.regular.forEach(font => {
         const option = document.createElement("option");
         option.value = font;
         option.text = font;

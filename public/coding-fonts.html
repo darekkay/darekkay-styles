@@ -10,6 +10,7 @@
     document.documentElement.dataset.theme = localStorage.getItem("theme")
       || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
   })();</script>
+  <script src="scripts/fonts.js"></script>
   <style>
     section {
       margin-top: 3rem;
@@ -40,12 +41,6 @@
   </main>
 
   <script>
-    const fonts = [
-      "Consolas",
-      "Fira Code",
-      "Inconsolata",
-      "JetBrains Mono",
-    ];
     const template = font => `<h2>${font}</h2>
       <pre class="hljs" tabindex="0"><code><span class="hljs-keyword">@import</span> <span class="hljs-string">"manual.css"</span>;
 
@@ -57,7 +52,7 @@
 }
 </code></pre>`;
 
-    fonts.forEach(font => {
+    window.dk_fonts.monospace.forEach(font => {
       const section = document.createElement("section");
       section.style.cssText = `font-family: ${font}, "Blokk Neue", sans-serif;`;
       section.innerHTML = template(font).trim();
