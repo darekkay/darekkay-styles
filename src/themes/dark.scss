@@ -36,6 +36,7 @@
 
   --button-primary-color-text: #{$black};
   --button-primary-color-background: var(--color-text-interaction);
+  --button-event-filter: saturate(70%) brightness(110%);
 
   --inverted-color-text-default: #{$white};
   --inverted-color-background-default: #{$gray-cool-90};

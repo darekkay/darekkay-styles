@@ -35,6 +35,7 @@
 
   --button-primary-color-text: var(--inverted-color-text-default);
   --button-primary-color-background: var(--inverted-color-background-default);
+  --button-event-filter: saturate(70%) brightness(120%);
 
   --inverted-color-text-default: #{$white};
   --inverted-color-background-default: #{$dk-blue-75};
