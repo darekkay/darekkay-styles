@@ -1,7 +1,7 @@
 code {
   display: inline-block;
   padding: 0 0.6rem;
-  white-space: pre;
+  white-space: pre-wrap;
   word-break: break-word;
   color: var(--color-text-default);
   background-color: var(--color-background-offset);
@@ -11,6 +11,7 @@ code {
 pre code {
   // handle right padding not being part of the overflow: https://stackoverflow.com/questions/1071927
   padding: 0 var(--content-horizontal-padding-xs) 0 0;
+  white-space: pre;
   color: inherit;
   background-color: inherit;
 }
