@@ -3,5 +3,6 @@
   a {
     // https://css-tricks.com/when-to-avoid-css-text-decoration-shorthand/
     text-decoration-line: underline;
+    transition: text-underline-offset 0.1s;
   }
 }
