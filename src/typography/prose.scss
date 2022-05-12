@@ -5,4 +5,8 @@
     text-decoration-line: underline;
     transition: text-underline-offset 0.1s;
   }
+
+  a:focus {
+    transition: none;
+  }
 }
