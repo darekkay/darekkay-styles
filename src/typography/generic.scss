@@ -42,14 +42,21 @@ pre {
 }
 
 a {
-  --color-link-box-shadow: transparent;
   color: var(--color-text-interaction);
-  box-shadow: inset 0 -0.2rem 0 var(--color-link-box-shadow);
   text-decoration: none;
+  text-underline-offset: 0.3rem;
+  transition: text-underline-offset 0.2s;
 }
 
-a:hover {
-  --color-link-box-shadow: var(--color-text-interaction);
+a:hover,
+a:focus {
+  text-decoration: underline;
+  text-decoration-thickness: 0.2rem;
+  text-underline-offset: 0.5rem;
+}
+
+a:focus {
+  transition: none;
 }
 
 hr {

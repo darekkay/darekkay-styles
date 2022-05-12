@@ -1,0 +1,7 @@
+// Differentiate prose links (underline) from links outside of prose (like menu links)
+.prose {
+  a {
+    // https://css-tricks.com/when-to-avoid-css-text-decoration-shorthand/
+    text-decoration-line: underline;
+  }
+}
