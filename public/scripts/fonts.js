@@ -5,6 +5,8 @@ window.dk_fonts = {
     "Hack",
     "Inconsolata",
     "JetBrains Mono",
+    "Source Code Pro",
+    "Ubuntu Mono",
     "Victor Mono",
   ],
   regular: [
