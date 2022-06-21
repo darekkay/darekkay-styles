@@ -18,6 +18,7 @@ const getTitle = (currentTheme) => `Switch to ${getNextTheme(currentTheme)} them
 
 [...document.querySelectorAll(THEME_PICKER_SELECTOR)].forEach((themePickerElement) => {
   const button = document.createElement("button");
+  button.type = "button";
   button.className = "btn flex items-center justify-center border-0 rounded-full";
   button.innerHTML = `${svgIcon(ICON_LIGHT, "default")} ${svgIcon(ICON_DARK, "dark")}`;
   button.title = getTitle(document.documentElement.dataset.theme);
