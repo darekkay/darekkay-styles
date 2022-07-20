@@ -46,6 +46,11 @@ const theme = {
 
   // Typography
 
+  fontFamily: {
+    "sans": "var(--base-font-family)",
+    "mono": "var(--monospace-font-family)"
+  },
+
   fontSize: {
     1: ["1.2rem", "1.7"],
     2: ["1.4rem", "1.6"],
@@ -230,6 +235,7 @@ const variants = {
 
   // Typography
 
+  fontFamily: [],
   fontSize: [],
   fontWeight: [],
   fontStyle: [],
@@ -308,7 +314,6 @@ const disabledPlugins = {
   filter: false,
   flex: false,
   float: false,
-  fontFamily: false,
   fontSmoothing: false,
   fontVariantNumeric: false,
   gap: false,
