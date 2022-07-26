@@ -56,13 +56,13 @@
 }
 
 @mixin breakpoint-md-down() {
-  @media (max-width: 639px) {
+  @media (max-width: 767px) {
     @content;
   }
 }
 
 @mixin breakpoint-md-up() {
-  @media (min-width: 640px) {
+  @media (min-width: 768px) {
     @content;
   }
 }
