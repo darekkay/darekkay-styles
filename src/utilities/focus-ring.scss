@@ -6,16 +6,6 @@
   outline: transparent solid 0.2rem;
 }
 
-:focus {
-  @include focus-ring();
-}
-
-// Progressive enhancement: https://matthiasott.com/notes/focus-visible-is-here
-:focus:not(:focus-visible) {
-  box-shadow: none;
-  outline: 0;
-}
-
 :focus-visible {
   @include focus-ring();
 }
