@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="default">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/tailwind.css"/>
+    <link rel="stylesheet" href="./css/highlightjs.css"/>
+    <link rel="stylesheet" href="./css/prismjs.css"/>
+    <title>Miscellaneous Colors</title>
+    <script>(function() {
+      document.documentElement.dataset.theme = localStorage.getItem("theme")
+        || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "default");
+    })();</script>
+    <script src="scripts/fonts.js"></script>
+    <style>
+      .rectangle { width: 170px; height: 60px; margin: 2rem 1rem; }
+      .label-border { position: absolute; top: -21px; }
+    </style>
+  </head>
+
+  <body>
+    <header class="inverted justify-around">
+      <span></span>
+      <h1>Style Guide</h1>
+      <div class="dk-theme-picker"></div>
+    </header>
+
+    <main class="prose">
+      <p><strong>← <a href="./index.html">Home</a></strong></p>
+
+      <h2>Diagrams</h2>
+
+      <div class="flex mb-6 ml-4">
+        <div>A</div>
+        <div class="flex justify-center font-mono" style="border-bottom: 1px solid #2d2e2f; width: 150px; height: 1px;">#2d2e2f</div>
+        <div>B</div>
+      </div>
+
+      <div class="flex flex-wrap">
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #947100; background-color: #fee685;">
+          <div class="label-border">#947100</div>
+          <span>#fee685</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #C05600; background-color: #ffcd9b;">
+          <div class="label-border">#c05600</div>
+          <span>#fdcec8</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #e52207; background-color: #fdcec8;">
+          <div class="label-border">#e52207</div>
+          <span>#fdcec8</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #8168b3; background-color: #ede3ff;">
+          <div class="label-border">#8168b3</div>
+          <span>#ede3ff</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #2378c3; background-color: #cfe8ff;">
+          <div class="label-border">#2378c3</div>
+          <span>#cfe8ff</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #538200; background-color: #c5ee93;">
+          <div class="label-border">#538200</div>
+          <span>#c5ee93</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #76766a; background-color: #f0f0ec;">
+          <div class="label-border">#76766a</div>
+          <span>#f0f0ec</span>
+        </div>
+
+        <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #1f303e; background-color: #ffffff;">
+          <div class="label-border">#1f303e</div>
+          <span>#ffffff</span>
+        </div>
+      </div>
+
+      <hr>
+
+    </main>
+
+    <footer class="inverted">
+      <span
+        >Handmade with &hearts; by
+        <a href="https://darekkay.com" target="_blank" rel="noopener">
+          Darek Kay
+        </a>
+      </span>
+      <div class="flex items-center">
+        <span>
+          Fork me on
+          <a
+            href="https://github.com/darekkay/darekkay-styles"
+            target="_blank"
+            rel="noopener"
+            >GitHub</a
+          >
+        </span>
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="github-icon"
+          role="img"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 496 512"
+        >
+          <path
+            fill="#fff"
+            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+          ></path>
+        </svg>
+      </div>
+    </footer>
+
+    <script>
+      const fontSelection = document.querySelector("#font-selection");
+      window.dk_fonts.regular.forEach(font => {
+        const option = document.createElement("option");
+        option.value = font;
+        option.text = font;
+        fontSelection.appendChild(option);
+      })
+
+      const main = document.querySelector("main");
+      fontSelection.addEventListener("change", (event) => {
+        main.style.cssText = `font-family: ${event.target.value}`;
+      })
+    </script>
+
+    <script src="./scripts/index.min.js"></script>
+  </body>
+</html>
