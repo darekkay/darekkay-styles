@@ -75,6 +75,9 @@ table {
   // Do not include additional border spacing
   border-collapse: collapse;
   border-spacing: 0;
+
+  // Move the caption to the bottom
+  caption-side: bottom;
 }
 
 th {
