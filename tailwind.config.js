@@ -119,6 +119,8 @@ const theme = {
     DEFAULT: 1,
   },
 
+  gap: (theme) => theme("spacing"),
+
   // CSS Grid
 
   gridTemplateColumns: {
