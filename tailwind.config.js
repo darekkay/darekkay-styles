@@ -222,6 +222,7 @@ const variants = {
   alignItems: ["responsive"],
   justifyContent: ["responsive"],
   placeContent: ["responsive"],
+  gap: ["responsive"],
 
   // CSS Grid
 
@@ -316,7 +317,6 @@ const disabledPlugins = {
   float: false,
   fontSmoothing: false,
   fontVariantNumeric: false,
-  gap: false,
   gradientColorStops: false,
   grayscale: false,
   gridAutoColumns: false,
