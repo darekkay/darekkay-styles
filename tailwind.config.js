@@ -47,8 +47,8 @@ const theme = {
   // Typography
 
   fontFamily: {
-    "sans": "var(--base-font-family)",
-    "mono": "var(--monospace-font-family)"
+    sans: "var(--base-font-family)",
+    mono: "var(--monospace-font-family)",
   },
 
   fontSize: {

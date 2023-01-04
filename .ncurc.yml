@@ -1,0 +1,5 @@
+# npm-check-updates configuration
+
+reject:
+  # pinned to 2 as long as jit is not used
+  - "@types/tailwindcss"
