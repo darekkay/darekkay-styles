@@ -1,7 +1,7 @@
 # @darekkay/styles
 
 [![npm (scoped)](https://img.shields.io/npm/v/@darekkay/styles?style=flat-square)](https://www.npmjs.com/package/@darekkay/styles)
-[![Build](https://img.shields.io/github/workflow/status/darekkay/darekkay-styles/Continuous%20Integration/master?style=flat-square)](https://github.com/darekkay/darekkay-styles/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/darekkay/darekkay-styles/ci.yml?branch=master&style=flat-square)](https://github.com/darekkay/darekkay-styles/actions/workflows/ci.yml)
 [![license](https://img.shields.io/badge/license-MIT-green?style=flat-square)](https://github.com/darekkay/darekkay-styles/blob/master/LICENSE)
 
 My shared CSS styles. View documentation at [darekkay.com/style-guide](https://darekkay.com/style-guide).
