@@ -1,8 +1,11 @@
 noscript {
   display: block;
-  margin: 4rem auto;
+  margin-block: 2.4rem;
+  padding: 1.5rem 2rem;
 
-  font-size: 2rem;
-  font-weight: bold;
+  background: var(--color-background-warning);
+  border: 1px dotted var(--color-border-warning);
+
+  font-style: italic;
   text-align: center;
 }
