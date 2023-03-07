@@ -41,3 +41,7 @@ select {
   border-radius: 0.4rem;
   border: 1px solid var(--color-border-default);
 }
+
+.input:disabled {
+  background-color: var(--color-background-disabled);
+}
