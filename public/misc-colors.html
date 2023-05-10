@@ -16,6 +16,19 @@
     <style>
       .rectangle { width: 170px; height: 60px; margin: 2rem 1rem; }
       .label-border { position: absolute; top: -21px; }
+
+      [data-theme="default"] .slides-highlight-1 { color: #008817; }
+      [data-theme="default"] .slides-highlight-2 { color: #d72d79; }
+      [data-theme="default"] .slides-highlight-3 { color: #9355dc; }
+      [data-theme="default"] .slides-highlight-4 { color: #0081a1; }
+      [data-theme="default"] .slides-link { color: #0076d6; }
+
+      [data-theme="dark"] .slides { background-color: #1f303e; }
+      [data-theme="dark"] .slides-highlight-1 { color: #a7e22e; }
+      [data-theme="dark"] .slides-highlight-2 { color: #ee83ff; }
+      [data-theme="dark"] .slides-highlight-3 { color: #face00; }
+      [data-theme="dark"] .slides-highlight-4 { color: #29e1cb; }
+      [data-theme="dark"] .slides-link { color: #fe9720; }
     </style>
   </head>
 
@@ -31,7 +44,7 @@
 
       <h2>Diagrams</h2>
 
-      <div class="flex mb-6 ml-4">
+      <div class="flex mb-6 ml-4 p-4 pt-5" style="color: #1f303e; background: #fff; width: fit-content;">
         <div>A</div>
         <div class="flex justify-center font-mono" style="border-bottom: 1px solid #2d2e2f; width: 150px; height: 1px;">#2d2e2f</div>
         <div>B</div>
@@ -41,44 +54,52 @@
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #947100; background-color: #fee685;">
           <div class="label-border">#947100</div>
-          <span>#fee685</span>
+          <span style="color: #1f303e">#fee685</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #C05600; background-color: #ffcd9b;">
           <div class="label-border">#c05600</div>
-          <span>#ffcd9b</span>
+          <span style="color: #1f303e">#ffcd9b</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #e52207; background-color: #fdcec8;">
           <div class="label-border">#e52207</div>
-          <span>#fdcec8</span>
+          <span style="color: #1f303e">#fdcec8</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #8168b3; background-color: #ede3ff;">
           <div class="label-border">#8168b3</div>
-          <span>#ede3ff</span>
+          <span style="color: #1f303e">#ede3ff</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #2378c3; background-color: #cfe8ff;">
           <div class="label-border">#2378c3</div>
-          <span>#cfe8ff</span>
+          <span style="color: #1f303e">#cfe8ff</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #538200; background-color: #c5ee93;">
           <div class="label-border">#538200</div>
-          <span>#c5ee93</span>
+          <span style="color: #1f303e">#c5ee93</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #76766a; background-color: #f0f0ec;">
           <div class="label-border">#76766a</div>
-          <span>#f0f0ec</span>
+          <span style="color: #1f303e">#f0f0ec</span>
         </div>
 
         <div class="rectangle flex justify-center items-center relative border font-mono text-3" style="border-color: #1f303e; background-color: #ffffff;">
           <div class="label-border">#1f303e</div>
-          <span>#ffffff</span>
+          <span style="color: #1f303e">#ffffff</span>
         </div>
       </div>
+
+      <hr>
+
+      <h2>Presentation slides</h2>
+
+      <p class="slides" style="font-size: 2.5rem; font-weight: 700;">
+        Lorem <span class="slides-highlight-1">ipsum</span> dolor sit amet, <span class="slides-highlight-2">consectetur</span> adipiscing elit. Cras <span class="slides-highlight-3">vestibulum</span> ex eget quam varius, vel tincidunt ligula placerat. Cras <span class="slides-highlight-4">interdum</span> felis in diam ullamcorper egestas <a class="slides-link" href="#">pellentesque</a> id dolor.
+      </p>
 
       <hr>
 
