@@ -1574,10 +1574,10 @@
     enabled "2.0.x"
     kuler "^2.0.0"
 
-"@darekkay/gulp@3.0.0":
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/@darekkay/gulp/-/gulp-3.0.0.tgz#d05cf04062c2bb96d4a6e3957aa62a62c6943136"
-  integrity sha512-PqSq2FIXoAztkwAkww7X/QUQNNqwT7ccvI6klaHurKEb985FnrM5CCMmuiz31G4zrp0fJ6KMMWKUyF1ajf5x7w==
+"@darekkay/gulp@3.0.1":
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/@darekkay/gulp/-/gulp-3.0.1.tgz#43bdd0e51d7f2e8e36f3a24255524f2d2803284f"
+  integrity sha512-RShLCcv2JwBHw0zVGGRZNkE4NEOBLn4ZRbdjxPL+rkQk6JNt0NCqBNkBrZmQHh5smyw1+SxRyC8VmKCkiZaNUg==
   dependencies:
     "@babel/core" "7.21.8"
     "@babel/preset-env" "7.21.5"
@@ -1608,10 +1608,10 @@
     log-symbols "4.1.0"
     loglevel "1.8.1"
 
-"@darekkay/logger@3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@darekkay/logger/-/logger-3.0.1.tgz#304383c2475ec70bb7a601a69067f184a0afaf95"
-  integrity sha512-RJlsi5xtEes8wNfINT5g/6CrRUCyOeL2MLf72ZDSUeF+0Z5/Up2OTMMaGcmqk0DHbEXS6VwV1allWYLJc6Ilew==
+"@darekkay/logger@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@darekkay/logger/-/logger-3.0.3.tgz#a1a5e9db10c3d2c6d49f647616deaa6a9e397528"
+  integrity sha512-hhhpp2M8bTKLRBJf7oZ7K6S9X74n3q2YjSBhZFkphuPYtz0m/TC8OKQvUe/gfWg+G6vE4yK4Bcw1Ug5RICgrKw==
   dependencies:
     chalk "4.1.2"
     loglevel "1.8.1"

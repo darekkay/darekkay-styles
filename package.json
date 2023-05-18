@@ -11,8 +11,8 @@
     "@types/tailwindcss": "2.2.4"
   },
   "devDependencies": {
-    "@darekkay/gulp": "3.0.0",
-    "@darekkay/logger": "3.0.1",
+    "@darekkay/gulp": "3.0.1",
+    "@darekkay/logger": "3.0.3",
     "a11y-contrast": "2.0.0",
     "ejs": "3.1.9",
     "jest": "29.5.0",
