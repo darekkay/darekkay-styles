@@ -36,7 +36,7 @@
   &.btn-outline:not(:hover):not(:active) {
     // same hover/active effect for all button types
     --btn-color-text: var(--btn-variant-color);
-    --btn-color-background: var(--color-background-default);
+    --btn-color-background: transparent;
   }
 
   &.btn-secondary {
@@ -47,6 +47,11 @@
   &.btn-danger {
     --btn-variant-color: var(--button-danger-color);
     --color-focus-ring: var(--button-danger-focus-ring);
+  }
+
+  &.btn-unstyled {
+    color: var(--color-text-default);
+    background-color: transparent;
   }
 
   &.btn-small {
