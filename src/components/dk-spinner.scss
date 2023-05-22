@@ -1,0 +1,9 @@
+dk-spinner {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 3px solid var(--color-border-default);
+  border-top-color: var(--color-text-default);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
