@@ -38,9 +38,12 @@
   --color-box-shadow: rgba(0, 0, 0, 0.5);
   --color-backdrop: rgba(0, 0, 0, 0.6);
 
-  --button-primary-color-text: #{$black};
-  --button-primary-color-background: var(--color-text-interaction);
-  --button-event-filter: saturate(70%) brightness(110%);
+  --button-primary-color: #{$gold-vivid-20};
+  --button-secondary-color: #{$blue-vivid-30};
+  --button-secondary-focus-ring: #{$blue-60};
+  --button-danger-color: var(--color-text-danger);
+  --button-danger-focus-ring: #{$red-warm-50};
+  --button-disabled-color: #{$gray-40};
 
   --inverted-color-text-default: #{$white};
   --inverted-color-background-default: #{$gray-cool-90};

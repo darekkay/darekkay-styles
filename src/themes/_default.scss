@@ -6,6 +6,8 @@
 
 :root,
 [data-theme="default"] {
+  $blue-vivid-55: #0070ca;
+
   --color-accent: #{$violet-vivid-60};
 
   --color-text-default: #{$blue-80};
@@ -34,9 +36,12 @@
   --color-box-shadow: rgba(0, 0, 0, 0.1);
   --color-backdrop: rgba(255, 255, 255, 0.6);
 
-  --button-primary-color-text: var(--inverted-color-text-default);
-  --button-primary-color-background: var(--inverted-color-background-default);
-  --button-event-filter: saturate(70%) brightness(120%);
+  --button-primary-color: #{$blue-vivid-55};
+  --button-secondary-color: #{$dk-violet-55};
+  --button-secondary-focus-ring: #{$violet-vivid-30};
+  --button-danger-color: var(--color-text-danger);
+  --button-danger-focus-ring: #{$red-30};
+  --button-disabled-color: #{$gray-warm-50};
 
   --inverted-color-text-default: #{$white};
   --inverted-color-background-default: #{$dk-blue-75};

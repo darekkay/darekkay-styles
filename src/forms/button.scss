@@ -1,24 +1,56 @@
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  // Correct the inability to style clickable types in iOS and Safari
-  -webkit-appearance: button;
-  padding: 0.5rem 1.25rem;
-}
-
 .btn {
-  border: none;
+  --btn-variant-color:  var(--button-primary-color);
+  --btn-color-text: var(--color-background-default);
+  --btn-color-background:  var(--btn-variant-color);
+  --btn-border-color: var(--btn-variant-color);
+
+  display: inline-flex;
+  align-items: center;
+  height: var(--btn-height, 3.6rem);
+  padding: var(--btn-padding, (0 1.4rem));
+
+  border: 1px solid var(--btn-border-color);
   border-radius: 0.4rem;
-  color: var(--button-primary-color-text);
-  background-color: var(--button-primary-color-background);
+
+  letter-spacing: 0.025em; // TODO: check if required
+  white-space: nowrap;
+
+  color: var(--btn-color-text);
+  background-color: var(--btn-color-background);
+  transition: all 0.15s ease;
 
   &:active {
+    // pressed-down effect
     transform: translateY(1px);
   }
 
-  &:hover,
-  &:active {
-    filter: var(--button-event-filter);
+  &[disabled],
+  &[disabled]:hover {
+    color: var(--button-disabled-color);
+    background-color: var(--color-background-default);
+    border-color: var(--button-disabled-color);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  &.btn-outline:not(:hover):not(:active) {
+    // same hover/active effect for all button types
+    --btn-color-text: var(--btn-variant-color);
+    --btn-color-background: var(--color-background-default);
+  }
+
+  &.btn-secondary {
+    --btn-variant-color: var(--button-secondary-color);
+    --color-focus-ring: var(--button-secondary-focus-ring);
+  }
+
+  &.btn-danger {
+    --btn-variant-color: var(--button-danger-color);
+    --color-focus-ring: var(--button-danger-focus-ring);
+  }
+
+  &.btn-small {
+    --btn-height: 3rem;
+    --btn-padding: 0 1rem;
   }
 }
