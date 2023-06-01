@@ -1,0 +1,10 @@
+@import "../mixins/all";
+
+.layout-content {
+  max-width: var(--content-max-width);
+  padding-inline: var(--content-horizontal-padding-xs);
+
+  @include breakpoint-md-up() {
+    padding-inline: var(--content-horizontal-padding-md);
+  }
+}
