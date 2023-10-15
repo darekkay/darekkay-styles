@@ -30,6 +30,7 @@ window.dk_fonts = {
     "HeliosCond",
     "Hind",
     "Indie Flower",
+    "Itim",
     "Kalam",
     "Lato",
     "Lobster Two",
