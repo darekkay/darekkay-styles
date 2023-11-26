@@ -69,6 +69,10 @@ h1 {
   line-height: 1;
   font-weight: 800;
   margin-bottom: 4rem;
+
+  // Balance main headline when wrapping is required.
+  // Browser support: https://caniuse.com/?search=text-wrap
+  text-wrap: balance;
 }
 
 h2 {
