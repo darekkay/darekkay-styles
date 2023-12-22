@@ -8,7 +8,7 @@ const onecolor = require("onecolor");
 const colorsWithGrades = () => {
   const colorsFile = readFileSync(
     join(__dirname, "..", "base", "colors.scss"),
-    "utf-8"
+    "utf-8",
   );
   const colorLinePattern = /\$.*-(\d{1,2}): ?(#[\da-f]{3,6});$/gim;
   const colors = [];
@@ -34,21 +34,21 @@ describe("colors", () => {
         if (Math.abs(grade1 - grade2) >= 40) {
           assert(
             contrastRatio >= 3,
-            `Insufficient contrast ratio between ${color1} and ${color2}`
+            `Insufficient contrast ratio between ${color1} and ${color2}`,
           );
         }
 
         if (Math.abs(grade1 - grade2) >= 50) {
           assert(
             contrastRatio >= 4.5,
-            `Insufficient contrast ratio between ${color1} and ${color2}`
+            `Insufficient contrast ratio between ${color1} and ${color2}`,
           );
         }
 
         if (Math.abs(grade1 - grade2) >= 70) {
           assert(
             contrastRatio >= 7,
-            `Insufficient contrast ratio between ${color1} and ${color2}`
+            `Insufficient contrast ratio between ${color1} and ${color2}`,
           );
         }
       });

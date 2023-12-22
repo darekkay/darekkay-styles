@@ -10,7 +10,7 @@ const extractCustomProperties = (text) => {
   return text
     .match(customPropertyRegex)
     .map((customProperty) =>
-      customProperty.substring(0, customProperty.length - 1)
+      customProperty.substring(0, customProperty.length - 1),
     );
 };
 
@@ -18,7 +18,7 @@ const defaultTheme = readFileSync(join(themesFolder, "_default.scss"), "utf-8");
 const defaultCustomProperties = extractCustomProperties(defaultTheme);
 
 const themeFiles = readdirSync(themesFolder).filter(
-  (file) => !file.startsWith("_") && file.endsWith(".scss")
+  (file) => !file.startsWith("_") && file.endsWith(".scss"),
 );
 
 let errorOccured = false;
@@ -33,7 +33,7 @@ themeFiles.forEach((themeFile) => {
   defaultCustomProperties.forEach((defaultCustomProperty) => {
     if (!themeCustomProperties.includes(defaultCustomProperty)) {
       logger.error(
-        `Theme ${themeFile} does not contain custom property ${defaultCustomProperty}`
+        `Theme ${themeFile} does not contain custom property ${defaultCustomProperty}`,
       );
       errorOccured = true;
     }
@@ -43,7 +43,7 @@ themeFiles.forEach((themeFile) => {
   themeCustomProperties.forEach((themeCustomProperty) => {
     if (!defaultCustomProperties.includes(themeCustomProperty)) {
       logger.error(
-        `Theme ${themeFile} defines an unknown custom property ${themeCustomProperty}`
+        `Theme ${themeFile} defines an unknown custom property ${themeCustomProperty}`,
       );
       errorOccured = true;
     }

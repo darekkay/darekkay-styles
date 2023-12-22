@@ -8,7 +8,7 @@ const ejs = require("ejs");
 
 const colorsFile = readFileSync(
   join(__dirname, "..", "..", "..", "src", "base", "colors.scss"),
-  "utf-8"
+  "utf-8",
 );
 const colorLinePattern = /\$((.*)-(\d{1,2})): ?(#[\da-f]{3,6});$/gim;
 const colors = [];
@@ -20,17 +20,17 @@ while ((match = colorLinePattern.exec(colorsFile)) !== null) {
 
 const flattened = colors.reduce(
   (accumulator, color) => ({ ...accumulator, [color[0]]: color[3] }),
-  {}
+  {},
 );
 
 writeFileSync(
   join(__dirname, "..", "..", "..", "public", "color-palette.json"),
-  JSON.stringify(flattened, null, 2)
+  JSON.stringify(flattened, null, 2),
 );
 
 const grouped = _.groupBy(
   colors,
-  ([colorName, colorFamily, grade, color]) => colorFamily
+  ([colorName, colorFamily, grade, color]) => colorFamily,
 );
 
 const template = readFileSync(join(__dirname, "template.ejs"), "utf-8");
@@ -38,5 +38,5 @@ const output = ejs.render(template, { palette: grouped });
 
 writeFileSync(
   join(__dirname, "..", "..", "..", "public", "color-palette.html"),
-  output
+  output,
 );

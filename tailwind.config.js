@@ -382,7 +382,7 @@ const corePlugins = {
       ...accumulator,
       [key]: true,
     }),
-    {}
+    {},
   ),
   ...disabledPlugins,
 };

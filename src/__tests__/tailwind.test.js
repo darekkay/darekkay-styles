@@ -8,7 +8,7 @@ describe("tailwind config", () => {
     const missingCorePlugins = corePlugins
       .map(
         (availablePlugin) =>
-          !customConfigPlugins.includes(availablePlugin) && availablePlugin
+          !customConfigPlugins.includes(availablePlugin) && availablePlugin,
       )
       .filter(Boolean);
     expect(missingCorePlugins).toEqual([]);
@@ -18,7 +18,7 @@ describe("tailwind config", () => {
     const unknownPlugins = customConfigPlugins
       .map(
         (availablePlugin) =>
-          !corePlugins.includes(availablePlugin) && availablePlugin
+          !corePlugins.includes(availablePlugin) && availablePlugin,
       )
       .filter(Boolean);
     expect(unknownPlugins).toEqual([]);
