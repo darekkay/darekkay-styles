@@ -1,19 +1,15 @@
 .dk-theme-picker {
   display: inline-block;
-
-  &:empty {
-    // progressive enhancement
-    // if the DOM element is empty, the initialization script was not executed
-    display: none;
-  }
+  width: 4rem;
+  height: 4rem;
 }
 
 .dk-theme-picker button {
   --btn-color-background: rgba(0, 0, 0, 0.4);
 
   position: relative;
-  width: 4rem;
-  height: 4rem;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   padding: 0;
   cursor: pointer;
