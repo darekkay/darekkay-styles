@@ -60,9 +60,24 @@ hr {
 }
 
 blockquote {
-  margin: 2rem 0;
   padding: 2rem 3rem;
-  border-left: 0.4rem solid var(--color-accent);
+  border-left: 0.5rem solid var(--color-accent);
   border-radius: 0.4rem;
   background-color: var(--color-background-offset);
+}
+
+details {
+  padding: 2rem 3rem;
+  border-left: 0.5rem solid var(--color-border-default);
+  border-radius: 0.4rem;
+  background-color: var(--color-background-offset);
+
+  summary {
+    cursor: pointer;
+  }
+
+  &[open] summary {
+    // spacing between summary and content
+    margin-bottom: 1.5rem;
+  }
 }
