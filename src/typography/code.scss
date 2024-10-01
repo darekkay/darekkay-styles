@@ -1,3 +1,5 @@
+@import "../mixins/all";
+
 code,
 kbd {
   display: inline-block;
@@ -14,10 +16,20 @@ code {
 }
 
 pre code {
-  // handle right padding not being part of the overflow: https://stackoverflow.com/questions/1071927
+  // handle right padding not being part of the overflow (Firefox): https://stackoverflow.com/questions/1071927
   padding: 0 var(--content-horizontal-padding-xs) 0 0;
   white-space: pre;
   color: inherit;
   background-color: inherit;
   border: none;
+
+  @include breakpoint-md-up() {
+    border-radius: 5px;
+    padding-right: var(--content-horizontal-padding-md);
+  }
+
+  @media (min-width: 818px) {
+    // use border-radius only when the box doesn't touch the viewport borders
+    border-radius: 5px;
+  }
 }

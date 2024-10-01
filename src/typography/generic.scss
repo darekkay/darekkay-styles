@@ -30,13 +30,19 @@ samp {
 
 pre {
   overflow: auto;
-  padding: var(--content-horizontal-padding-xs);
-  margin-left: calc(var(--content-horizontal-padding-xs) * -1);
-  margin-right: calc(var(--content-horizontal-padding-xs) * -1);
+  padding-block: 1.5rem;
+  padding-inline: var(--content-horizontal-padding-xs);
+  margin-inline: calc(var(--content-horizontal-padding-xs) * -1);
 
   background-color: var(--color-background-offset);
 
   @include breakpoint-md-up() {
+    padding-inline: var(--content-horizontal-padding-md);
+    margin-inline: calc(var(--content-horizontal-padding-md) * -1);
+  }
+
+  @media (min-width: 818px) {
+    // use border-radius only when the box doesn't touch the viewport borders
     border-radius: 5px;
   }
 }
