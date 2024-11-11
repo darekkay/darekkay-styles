@@ -8,3 +8,6 @@
 @use "animations/all" as *;
 @use "components/all" as *;
 @use "utilities/all" as *;
+
+@forward "mixins/all";
+@forward "base/colors";
