@@ -2,7 +2,7 @@
  * Theme: Light (default)
  */
 
-@import "../base/colors";
+@use "../base/colors" as *;
 
 :root,
 [data-theme="default"] {

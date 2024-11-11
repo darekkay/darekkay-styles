@@ -1,4 +1,4 @@
-@import "../mixins/all";
+@use "../mixins/all" as *;
 
 code,
 kbd {

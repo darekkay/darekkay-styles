@@ -1,4 +1,4 @@
-@import "../mixins/all";
+@use "../mixins/all" as *;
 
 html {
   // font-size 1em = 10px on default browser settings

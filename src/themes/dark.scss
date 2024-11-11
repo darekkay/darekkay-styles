@@ -2,7 +2,7 @@
  * Theme: Dark
  */
 
-@import "../base/colors";
+@use "../base/colors" as *;
 
 [data-theme="dark"] {
   // enforce dark scrollbars
