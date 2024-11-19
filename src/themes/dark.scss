@@ -4,7 +4,7 @@
 
 @use "../base/colors" as *;
 
-[data-theme="dark"] {
+@mixin apply-dark-theme() {
   // enforce dark scrollbars
   color-scheme: dark;
 
@@ -49,4 +49,8 @@
   --inverted-color-background-default: #{$gray-cool-90};
   --inverted-color-text-interaction: var(--color-text-interaction);
   --inverted-color-focus-ring: hsla(49, 100%, 49%, 0.5);
+}
+
+[data-theme="dark"] {
+  @include apply-dark-theme();
 }
