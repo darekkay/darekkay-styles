@@ -111,3 +111,11 @@ pre:has(+ pre) {
   // smaller spacing between adjacent code blocks
   margin-bottom: 0.5rem;
 }
+
+// Images
+
+img {
+  // alt description styling
+  color: var(--color-text-offset);
+  font-style: italic;
+}
