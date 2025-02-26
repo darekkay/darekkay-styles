@@ -4,9 +4,21 @@ dk-baseline {
   display: block;
   margin-bottom: 2.4rem;
 
-  border: 1px solid var(--color-border-default);
+  border: 1px solid var(--dk-baseline-border-color);
   border-left-width: 0.5rem;
   border-radius: 0.4rem;
+
+  &[availability="widely"] {
+    --dk-baseline-border-color: var(--color-border-success);
+  }
+
+  &[availability="newly"] {
+    --dk-baseline-border-color: var(--color-border-info);
+  }
+
+  &[availability="limited"] {
+    --dk-baseline-border-color: var(--color-border-warning);
+  }
 
   .dk-baseline-title,
   .dk-baseline-content {
