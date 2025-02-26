@@ -1,0 +1,35 @@
+@use "../mixins/all" as *;
+
+dk-baseline {
+  display: block;
+  margin-bottom: 2.4rem;
+
+  border: 1px solid var(--color-border-default);
+  border-left-width: 0.5rem;
+  border-radius: 0.4rem;
+
+  .dk-baseline-title,
+  .dk-baseline-content {
+    padding-inline: 1.7rem;
+
+    @include breakpoint-md-up() {
+      padding-inline: 2.5rem;
+    }
+  }
+
+  .dk-baseline-title {
+    padding-block: 0.6rem;
+
+    @include breakpoint-md-up() {
+      padding-block: 1rem;
+    }
+  }
+
+  .dk-baseline-content {
+    padding-block: 1.2rem;
+
+    @include breakpoint-md-up() {
+      padding-block: 2rem;
+    }
+  }
+}
