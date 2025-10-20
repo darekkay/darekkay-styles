@@ -31,8 +31,13 @@ html {
   background-repeat: no-repeat;
 
   // Prevent adjustments of font size after orientation changes in iOS
-  -webkit-text-size-adjust: 100%;
+  // https://kilianvalkhof.com/2022/css-html/your-css-reset-needs-text-size-adjust-probably/
+  -webkit-text-size-adjust: none;
   text-size-adjust: none;
+
+  // Disable subpixel antialiasing
+  // https://dbushell.com/2024/11/05/webkit-font-smoothing/
+  -webkit-font-smoothing: antialiased;
 }
 
 *,
