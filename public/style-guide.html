@@ -133,6 +133,7 @@
         amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida
         vehicula, nisl.
       </p>
+      <p>Check how non-standard letters are displayed, e.g., <strong>część</strong>, <strong>tēnā kōrua</strong> or <strong>Übergrößengeschäft</strong>.</p>
       <h2 id="heading-2"><a href="#heading-2">This is a heading 2</a></h2>
       <p>
         Lorem ipsum dolor sit amet, adipiscing elit. Nullam dignissim convallis
@@ -673,7 +674,7 @@
 
       const main = document.querySelector("main");
       fontSelection.addEventListener("change", (event) => {
-        main.style.cssText = `font-family: ${event.target.value}`;
+        main.style.cssText = `font-family: "${event.target.value}"`;
       })
     </script>
 
