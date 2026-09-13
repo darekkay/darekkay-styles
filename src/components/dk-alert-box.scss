@@ -13,12 +13,14 @@ dk-alert-box {
     padding: 2rem 2.5rem;
   }
 
-  &[type="info"] {
+  &[type="info"],
+  &[type="note"] {
     --alert-border: var(--color-border-info);
     --alert-background: var(--color-background-info);
   }
 
-  &[type="warning"] {
+  &[type="warning"],
+  &[type="caution"] {
     --alert-border: var(--color-border-warning);
     --alert-background: var(--color-background-warning);
   }
@@ -28,7 +30,8 @@ dk-alert-box {
     --alert-background: var(--color-background-danger);
   }
 
-  &[type="success"] {
+  &[type="success"],
+  &[type="tip"] {
     --alert-border: var(--color-border-success);
     --alert-background: var(--color-background-success);
   }
