@@ -11,7 +11,7 @@
 
     window.dk_fonts.monospace.forEach(font => {
       const section = document.createElement("section");
-      section.style.cssText = `font-family: ${font}, "Blokk Neue", sans-serif;`;
+      section.style.cssText = `font-family: "${font}", "Blokk Neue", sans-serif;`;
       section.innerHTML = template(font).trim();
       document.querySelector("main").appendChild(section);
     });</script><script src="./scripts/index.min.js"></script></body></html>

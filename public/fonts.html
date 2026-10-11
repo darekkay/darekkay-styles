@@ -60,7 +60,7 @@
 
     window.dk_fonts.regular.forEach(font => {
       const section = document.createElement("section");
-      section.style.cssText = `font-family: ${font}, "Blokk Neue", monospace;`;
+      section.style.cssText = `font-family: "${font}", "Blokk Neue", monospace;`;
       section.innerHTML = template(font).trim();
 
       const removeButton = section.querySelector("button");
